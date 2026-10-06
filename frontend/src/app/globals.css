@@ -1,26 +1,27 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-airbnb-primary: #FF385C;
+  --color-airbnb-primary-hover: #D90B63;
+  --color-airbnb-text: #222222;
+  --color-airbnb-secondary: #717171;
+  --color-airbnb-border: #DDDDDD;
+  --color-airbnb-bg: #FFFFFF;
+
+  --shadow-airbnb: 0 1px 2px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+  --shadow-airbnb-hover: 0 2px 4px rgba(0,0,0,0.18);
+
+  --font-sans: "Inter", "Circular", system-ui, sans-serif;
+  
+  --radius-xl: 12px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html, body {
+    @apply m-0 p-0 text-[color:var(--color-airbnb-text)] bg-[color:var(--color-airbnb-bg)] antialiased font-sans;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  
+  * {
+    @apply border-[color:var(--color-airbnb-border)];
+  }
 }

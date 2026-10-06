@@ -2,10 +2,14 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Search, Globe, Menu, UserCircle } from "lucide-react";
+import { Globe, Menu, UserCircle } from "lucide-react";
 import { useUser } from "@/contexts/UserContext";
+import SearchBar from "@/components/SearchBar";
+import { useRouter } from "next/navigation";
+import qs from "query-string";
 
 export default function Header() {
+  const router = useRouter();
   const { user, users, login, logout } = useUser();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -23,19 +27,25 @@ export default function Header() {
           </Link>
 
           {/* Search Pill */}
-          <div className="flex-1 md:flex-none flex items-center justify-center">
-            <div className="border border-[color:var(--color-airbnb-border)] w-full md:w-auto py-2 rounded-full shadow-[var(--shadow-airbnb)] hover:shadow-[var(--shadow-airbnb-hover)] transition cursor-pointer flex items-center justify-between md:justify-start">
-              <div className="text-sm font-semibold px-4 md:px-6">Anywhere</div>
-              <div className="hidden sm:block text-sm font-semibold px-6 border-x border-[color:var(--color-airbnb-border)]">
-                Any week
-              </div>
-              <div className="text-sm pl-4 pr-2 text-[color:var(--color-airbnb-secondary)] flex items-center gap-3">
-                <div className="hidden sm:block">Add guests</div>
-                <div className="p-2 bg-[color:var(--color-airbnb-primary)] rounded-full text-white">
-                  <Search size={14} strokeWidth={3} />
-                </div>
-              </div>
-            </div>
+          <div className="flex-1 md:flex-none flex items-center justify-center relative">
+            <SearchBar onSearch={(data) => {
+              let query: any = {};
+              if (data.location) query.location = data.location;
+              if (data.guests > 0) query.guests = data.guests;
+              if (data.dates?.startDate && data.dates?.endDate) {
+                // Formatting dates safely
+                try {
+                   query.check_in = data.dates.startDate.toISOString().split('T')[0];
+                   query.check_out = data.dates.endDate.toISOString().split('T')[0];
+                } catch(e) {}
+              }
+              
+              const url = qs.stringifyUrl({
+                url: "/",
+                query
+              }, { skipNull: true });
+              router.push(url);
+            }} />
           </div>
 
           {/* User Menu */}

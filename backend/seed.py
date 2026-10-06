@@ -1,13 +1,20 @@
 import random
 import datetime
 from database import engine, Base, SessionLocal
-from models.domain import User, Listing, Photo, Amenity, Booking, Review
+from models.models import User, Listing, ListingPhoto, Amenity, Booking, Review, Wishlist
 
 # 1. Configuration & Data Pools
 CITIES = [
-    ("Goa", "India"), ("Mumbai", "India"), ("Manali", "India"), ("Jaipur", "India"), 
-    ("Bali", "Indonesia"), ("Paris", "France"), ("New York", "USA"), 
-    ("Tokyo", "Japan"), ("Lisbon", "Portugal"), ("Santorini", "Greece")
+    ("Goa", "GA", "India", "Beach Road"), 
+    ("Mumbai", "MH", "India", "Marine Drive"), 
+    ("Manali", "HP", "India", "Mall Road"), 
+    ("Jaipur", "RJ", "India", "Pink City"), 
+    ("Bali", "BA", "Indonesia", "Ubud Street"), 
+    ("Paris", "IDF", "France", "Champs-Elysees"), 
+    ("New York", "NY", "USA", "Broadway"), 
+    ("Tokyo", "TK", "Japan", "Shibuya"), 
+    ("Lisbon", "LS", "Portugal", "Alfama"), 
+    ("Santorini", "SA", "Greece", "Oia")
 ]
 PROPERTY_TYPES = ["Apartment", "Villa", "Cabin", "Beachfront", "Treehouse", "Farm", "Castle", "Tiny home", "Mansion", "Loft"]
 AMENITIES_LIST = [
@@ -65,14 +72,15 @@ def main():
 
         print("Seeding Users...")
         users = []
+        today = datetime.date.today()
         # 3 Hosts
         for i in range(1, 4):
-            u = User(name=f"Host {i}", email=f"host{i}@example.com", avatar_url=generate_avatar(f"Host {i}"), is_host=True)
+            u = User(name=f"Host {i}", email=f"host{i}@example.com", avatar_url=generate_avatar(f"Host {i}"), is_host=True, joined_at=today - datetime.timedelta(days=random.randint(100, 1000)), bio="Love hosting people from around the world!")
             db.add(u)
             users.append(u)
         # 3 Guests
         for i in range(1, 4):
-            u = User(name=f"Guest {i}", email=f"guest{i}@example.com", avatar_url=generate_avatar(f"Guest {i}"), is_host=False)
+            u = User(name=f"Guest {i}", email=f"guest{i}@example.com", avatar_url=generate_avatar(f"Guest {i}"), is_host=False, joined_at=today - datetime.timedelta(days=random.randint(10, 300)))
             db.add(u)
             users.append(u)
         db.commit()
@@ -83,7 +91,7 @@ def main():
         print("Seeding Listings & Photos...")
         listings = []
         for i in range(45):
-            city, country = random.choice(CITIES)
+            city, state, country, address = random.choice(CITIES)
             prop_type = random.choice(PROPERTY_TYPES)
             title = f"{random.choice(TITLES)} {prop_type} {random.choice(NOUNS)} in {city}"
             desc = f"Experience the best of {city} in this {title.lower()}. Fully equipped and ready for your stay!"
@@ -95,55 +103,64 @@ def main():
                 title=title,
                 description=desc,
                 city=city,
+                state=state,
                 country=country,
+                address=address,
                 property_type=prop_type,
                 price_per_night=round(random.uniform(50, 800), 2),
+                cleaning_fee=round(random.uniform(10, 100), 2),
+                service_fee_pct=0.15,
+                latitude=round(random.uniform(-90, 90), 4),
+                longitude=round(random.uniform(-180, 180), 4),
                 max_guests=random.randint(1, 10),
                 bedrooms=random.randint(1, 5),
                 beds=random.randint(1, 7),
-                baths=random.choice([1, 1.5, 2, 2.5, 3]),
+                bathrooms=random.choice([1, 1.5, 2, 2.5, 3]),
             )
             
-            # Assign 5-10 random amenities
             num_amens = random.randint(5, 15)
             listing.amenities = random.sample(amenities, num_amens)
             
             db.add(listing)
-            db.flush() # to get listing.id
+            db.flush()
             listings.append(listing)
             
-            # Assign exactly 5 photos
-            for _ in range(5):
-                db.add(Photo(listing_id=listing.id, url=generate_random_photo()))
+            # Photos
+            for pos in range(5):
+                db.add(ListingPhoto(listing_id=listing.id, url=generate_random_photo(), position=pos))
                 
         db.commit()
 
         print("Seeding Bookings & Reviews...")
-        today = datetime.date.today()
         bookings_count = 0
         reviews_count = 0
         
-        # We will create about 2 bookings per listing
         for listing in listings:
             # Past booking (Completed)
             guest1 = random.choice(guests)
             past_start = today - datetime.timedelta(days=random.randint(10, 60))
             past_end = past_start + datetime.timedelta(days=random.randint(2, 7))
             days1 = (past_end - past_start).days
+            subtotal1 = days1 * listing.price_per_night
+            service1 = subtotal1 * listing.service_fee_pct
             
             past_booking = Booking(
                 listing_id=listing.id,
                 guest_id=guest1.id,
                 check_in=past_start,
                 check_out=past_end,
-                total_price=days1 * listing.price_per_night,
-                status="completed"
+                guests=random.randint(1, listing.max_guests),
+                nights=days1,
+                subtotal=subtotal1,
+                cleaning_fee=listing.cleaning_fee,
+                service_fee=service1,
+                total=subtotal1 + listing.cleaning_fee + service1,
+                status="confirmed"
             )
             db.add(past_booking)
             db.flush()
             bookings_count += 1
             
-            # Review for past booking (about 80% chance)
             if random.random() < 0.8:
                 review1 = Review(
                     listing_id=listing.id,
@@ -151,24 +168,31 @@ def main():
                     booking_id=past_booking.id,
                     rating=random.randint(3, 5),
                     comment=random.choice(REVIEWS_TEXT),
-                    created_at=past_end + datetime.timedelta(days=1) # created after check out
+                    created_at=datetime.datetime.combine(past_end + datetime.timedelta(days=1), datetime.time())
                 )
                 db.add(review1)
                 reviews_count += 1
             
-            # Future booking (Confirmed) - 50% chance
+            # Future booking (Confirmed)
             if random.random() < 0.5:
                 guest2 = random.choice(guests)
                 future_start = today + datetime.timedelta(days=random.randint(5, 30))
                 future_end = future_start + datetime.timedelta(days=random.randint(2, 7))
                 days2 = (future_end - future_start).days
+                subtotal2 = days2 * listing.price_per_night
+                service2 = subtotal2 * listing.service_fee_pct
                 
                 future_booking = Booking(
                     listing_id=listing.id,
                     guest_id=guest2.id,
                     check_in=future_start,
                     check_out=future_end,
-                    total_price=days2 * listing.price_per_night,
+                    guests=random.randint(1, listing.max_guests),
+                    nights=days2,
+                    subtotal=subtotal2,
+                    cleaning_fee=listing.cleaning_fee,
+                    service_fee=service2,
+                    total=subtotal2 + listing.cleaning_fee + service2,
                     status="confirmed"
                 )
                 db.add(future_booking)
@@ -177,8 +201,7 @@ def main():
         db.commit()
         
         print("\n=== Seeding Summary ===")
-        print(f"Users: {len(users)} (3 hosts, 3 guests)")
-        print(f"Amenities: {len(amenities)}")
+        print(f"Users: {len(users)}")
         print(f"Listings: {len(listings)}")
         print(f"Photos: {len(listings) * 5}")
         print(f"Bookings: {bookings_count}")

@@ -44,12 +44,24 @@ export default function ListingCard({ data }: { data: any }) {
           </div>
           
           <div 
-            onClick={(e) => { e.stopPropagation(); setIsLiked(!isLiked); }}
-            className="absolute top-3 right-3 transition hover:opacity-80 z-10"
+            onClick={async (e) => { 
+              e.stopPropagation(); 
+              const newLiked = !isLiked;
+              setIsLiked(newLiked); 
+              try {
+                if (newLiked) {
+                  await fetch(`http://localhost:8000/api/wishlist/${data.id}`, { method: 'POST', headers: { 'X-User-Id': localStorage.getItem('userId') || '' } });
+                } else {
+                  await fetch(`http://localhost:8000/api/wishlist/${data.id}`, { method: 'DELETE', headers: { 'X-User-Id': localStorage.getItem('userId') || '' } });
+                }
+              } catch(e) {}
+            }}
+            className="absolute top-3 right-3 transition hover:scale-110 active:scale-95 z-10"
           >
             <Heart 
-              size={24} 
-              className={isLiked ? "fill-[color:var(--color-airbnb-primary)] text-[color:var(--color-airbnb-primary)]" : "fill-neutral-500/50 text-white"} 
+              size={26} 
+              strokeWidth={isLiked ? 0 : 2}
+              className={`drop-shadow-md ${isLiked ? "fill-[color:var(--color-airbnb-primary)] text-[color:var(--color-airbnb-primary)]" : "fill-black/30 text-white"}`} 
             />
           </div>
 

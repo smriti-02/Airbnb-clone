@@ -17,6 +17,7 @@
     "react": "19.2.8",
     "react-date-range": "^2.0.1",
     "react-dom": "19.2.8",
+    "react-hot-toast": "^2.6.1",
     "react-intersection-observer": "^11.0.1",
     "react-leaflet": "^5.0.0"
   },

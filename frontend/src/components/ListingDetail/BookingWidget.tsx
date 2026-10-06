@@ -5,6 +5,7 @@ import { apiFetch } from "@/lib/api";
 import { Button } from "@/components/UI";
 import { useUser } from "@/contexts/UserContext";
 import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 import 'react-date-range/dist/styles.css'; 
 import 'react-date-range/dist/theme/default.css';
 
@@ -15,7 +16,6 @@ export default function BookingWidget({ listing }: { listing: any }) {
   const [dateRange, setDateRange] = useState([{ startDate: new Date(), endDate: new Date(), key: 'selection' }]);
   const [guests, setGuests] = useState(1);
   const [quote, setQuote] = useState<any>(null);
-  const [error, setError] = useState<string | null>(null);
   const [unavailableDates, setUnavailableDates] = useState<Date[]>([]);
   
   useEffect(() => {
@@ -53,9 +53,7 @@ export default function BookingWidget({ listing }: { listing: any }) {
             })
           });
           setQuote(res);
-          setError(null);
         } catch(e: any) {
-          setError(e.message);
           setQuote(null);
         }
       } else {
@@ -65,27 +63,17 @@ export default function BookingWidget({ listing }: { listing: any }) {
     fetchQuote();
   }, [dateRange, guests, listing.id]);
 
-  const onReserve = async () => {
+  const onReserve = () => {
     if (!user) {
-      setError("Please select a User (Guest) from the top right menu to book.");
+      toast.error("Please select a User (Guest) from the top right menu to book.");
       return;
     }
     const { startDate, endDate } = dateRange[0];
-    try {
-      await apiFetch(`/bookings`, {
-        method: "POST",
-        body: JSON.stringify({
-          listing_id: listing.id,
-          check_in: startDate.toISOString().split('T')[0],
-          check_out: endDate.toISOString().split('T')[0],
-          guests
-        })
-      });
-      alert("Booking confirmed successfully!");
-      router.push("/");
-    } catch(e: any) {
-      setError(e.message);
-    }
+    const ci = startDate.toISOString().split('T')[0];
+    const co = endDate.toISOString().split('T')[0];
+    
+    // Redirect to Confirm and Pay page
+    router.push(`/book/${listing.id}?check_in=${ci}&check_out=${co}&guests=${guests}`);
   };
 
   return (
@@ -118,8 +106,6 @@ export default function BookingWidget({ listing }: { listing: any }) {
           />
         </div>
       </div>
-      
-      {error && <div className="text-red-500 text-sm font-semibold mb-4">{error}</div>}
       
       <Button primary className="w-full py-3 text-lg" onClick={onReserve} disabled={!quote}>
         Reserve

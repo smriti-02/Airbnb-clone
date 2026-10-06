@@ -1,4 +1,4 @@
-import TripsClient from "./TripsClient";
+import TripsClient from "@/app/trips/TripsClient";
 
 export default function TripsPage() {
   return <TripsClient />;

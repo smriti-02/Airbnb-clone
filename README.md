@@ -2,6 +2,9 @@
 
 <h1 align="center">Airbnb Clone</h1>
 
+[![Watch the demo]](backend/docs/demo.mp4)
+
+
 <p align="center">
   A full-stack Airbnb-style marketplace with a guest side (search, listing pages, booking) and a host side
   (listing wizard, calendar, reservations, messaging).
@@ -35,6 +38,7 @@
 - [Features vs assignment requirements](#features-vs-assignment-requirements)
 - [Tech stack](#tech-stack)
 - [System architecture](#system-architecture)
+  - [Data Flow Diagram](#dataflow-diagram)
   - [System flowchart](#system-flowchart)
   - [Backend layering](#backend-layering)
   - [Search request lifecycle](#search-request-lifecycle)
@@ -160,6 +164,18 @@ Screenshots are not committed yet. Add the images to `docs/screenshots/` and unc
 ---
 
 ## System architecture
+
+### Data flow diagrams
+
+Level 0 (context):
+
+<p align="center"> <img src="backend/docs/dfd-level-0.png" alt="DFD level 0" width="100%"> </p>
+
+Level 1:
+
+<p align="center"> <img src="backend/docs/dfd-level-1.png" alt="DFD level 1" width="100%"> </p>
+
+Circles are processes, boxes are external entities, and the open-ended shapes (D1 to D7) are data stores.
 
 ### System flowchart
 
@@ -316,7 +332,7 @@ Airbnb-clone/
 
 ### ER diagram
 
-<p align="center"> <img src="backend/docs/diagrams/er-diagram.png" alt="Entity relationship diagram" width="100%"> </p>
+<p align="center"> <img src="backend/docs/er-diagram.png" alt="Entity relationship diagram" width="100%"> </p>
 
 Crow's-foot notation: || = exactly one, o< = zero or many. PK = primary key, FK = foreign key. Vector version: er-diagram.svg.
 

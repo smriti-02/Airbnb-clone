@@ -46,12 +46,12 @@ export default function FilterModal({ isOpen, onClose }: { isOpen: boolean, onCl
           <div className="flex items-center gap-4">
             <div className="border border-[color:var(--color-airbnb-border)] rounded-xl p-3 w-full flex flex-col focus-within:border-black transition">
               <span className="text-xs text-neutral-500">Minimum</span>
-              <div className="flex items-center"><span className="mr-1">$</span><input type="number" className="outline-none w-full bg-transparent" value={minPrice} onChange={e => setMinPrice(e.target.value)} /></div>
+              <div className="flex items-center"><span className="mr-1">₹</span><input type="number" className="outline-none w-full bg-transparent" value={minPrice} onChange={e => setMinPrice(e.target.value)} /></div>
             </div>
             <div className="text-neutral-500">-</div>
             <div className="border border-[color:var(--color-airbnb-border)] rounded-xl p-3 w-full flex flex-col focus-within:border-black transition">
               <span className="text-xs text-neutral-500">Maximum</span>
-              <div className="flex items-center"><span className="mr-1">$</span><input type="number" className="outline-none w-full bg-transparent" value={maxPrice} onChange={e => setMaxPrice(e.target.value)} /></div>
+              <div className="flex items-center"><span className="mr-1">₹</span><input type="number" className="outline-none w-full bg-transparent" value={maxPrice} onChange={e => setMaxPrice(e.target.value)} /></div>
             </div>
           </div>
         </div>

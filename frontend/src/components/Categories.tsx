@@ -1,7 +1,7 @@
 "use client";
 
 import { useSearchParams, useRouter } from "next/navigation";
-import { useCallback } from "react";
+import { useCallback, useState, useEffect } from "react";
 import qs from "query-string";
 import { Flame, Waves, Tent, Home, Mountain, Trees, Tractor, Castle, Palmtree, Snowflake } from "lucide-react";
 

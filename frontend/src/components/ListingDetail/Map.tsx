@@ -2,7 +2,6 @@
 import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
 import 'leaflet/dist/leaflet.css';
-import L from 'leaflet';
 
 const MapContainer = dynamic(() => import('react-leaflet').then((mod) => mod.MapContainer), { ssr: false });
 const TileLayer = dynamic(() => import('react-leaflet').then((mod) => mod.TileLayer), { ssr: false });
@@ -12,10 +11,12 @@ export default function Map({ lat, lng }: { lat: number, lng: number }) {
   const [icon, setIcon] = useState<any>(null);
 
   useEffect(() => {
-    setIcon(L.icon({
-      iconUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png",
-      iconAnchor: [12, 41]
-    }));
+    import('leaflet').then((L) => {
+      setIcon(L.icon({
+        iconUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png",
+        iconAnchor: [12, 41]
+      }));
+    });
   }, []);
 
   if (!icon) return <div className="h-[400px] w-full bg-neutral-100 animate-pulse rounded-xl" />;

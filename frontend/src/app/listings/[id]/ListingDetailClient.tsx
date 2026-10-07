@@ -6,7 +6,10 @@ import PhotoGallery from "@/components/ListingDetail/PhotoGallery";
 import BookingWidget from "@/components/ListingDetail/BookingWidget";
 import Map from "@/components/ListingDetail/Map";
 import Reviews from "@/components/ListingDetail/Reviews";
+import WishlistButton from "@/components/WishlistButton";
 import { Skeleton } from "@/components/UI";
+import { formatINR } from "@/lib/format";
+import MessageHostButton from "@/components/Shared/MessageHostButton";
 
 export default function ListingDetailClient({ id }: { id: string }) {
   const [data, setData] = useState<any>(null);
@@ -35,7 +38,7 @@ export default function ListingDetailClient({ id }: { id: string }) {
         </div>
         <div className="flex gap-4">
           <button className="flex items-center gap-2 hover:bg-neutral-100 p-2 rounded-lg transition"><Share size={16}/> Share</button>
-          <button className="flex items-center gap-2 hover:bg-neutral-100 p-2 rounded-lg transition"><Heart size={16}/> Save</button>
+          <WishlistButton listingId={Number(id)} className="hover:bg-neutral-100 p-2 rounded-lg" size={16} withText />
         </div>
       </div>
 
@@ -57,7 +60,8 @@ export default function ListingDetailClient({ id }: { id: string }) {
              <Medal size={28} />
              <div>
                <h3 className="font-bold">{data.host.name} is a Superhost</h3>
-               <p className="text-neutral-500">Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.</p>
+               <p className="text-neutral-500 mb-2">Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.</p>
+               <MessageHostButton listingId={data.id} hostId={data.host.id} hostName={data.host.name} />
              </div>
           </div>
 
@@ -94,7 +98,7 @@ export default function ListingDetailClient({ id }: { id: string }) {
       {/* Mobile Sticky Bottom Bar */}
       <div className="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-[color:var(--color-airbnb-border)] p-4 flex justify-between items-center z-50">
         <div>
-          <div className="font-bold">${data.price_per_night} <span className="font-normal text-sm">night</span></div>
+          <div className="font-bold">{formatINR(data.price_per_night)} <span className="font-normal text-sm">night</span></div>
           <div className="text-sm underline cursor-pointer">Select dates</div>
         </div>
         <button className="bg-[color:var(--color-airbnb-primary)] text-white px-6 py-3 rounded-xl font-bold">Reserve</button>

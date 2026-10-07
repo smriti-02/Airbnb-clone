@@ -4,17 +4,23 @@ import { DateRange } from "react-date-range";
 import { apiFetch } from "@/lib/api";
 import { Button } from "@/components/UI";
 import { useUser } from "@/contexts/UserContext";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import toast from "react-hot-toast";
 import 'react-date-range/dist/styles.css'; 
 import 'react-date-range/dist/theme/default.css';
+import { formatINR, formatDateKey } from "@/lib/format";
 
 export default function BookingWidget({ listing }: { listing: any }) {
   const { user } = useUser();
   const router = useRouter();
+  const searchParams = useSearchParams();
   
-  const [dateRange, setDateRange] = useState([{ startDate: new Date(), endDate: new Date(), key: 'selection' }]);
-  const [guests, setGuests] = useState(1);
+  const initialCheckIn = searchParams.get("check_in") ? new Date(searchParams.get("check_in")!) : new Date();
+  const initialCheckOut = searchParams.get("check_out") ? new Date(searchParams.get("check_out")!) : new Date();
+  const initialGuests = parseInt(searchParams.get("guests") || "1");
+  
+  const [dateRange, setDateRange] = useState([{ startDate: initialCheckIn, endDate: initialCheckOut, key: 'selection' }]);
+  const [guests, setGuests] = useState(initialGuests);
   const [quote, setQuote] = useState<any>(null);
   const [unavailableDates, setUnavailableDates] = useState<Date[]>([]);
   
@@ -47,8 +53,8 @@ export default function BookingWidget({ listing }: { listing: any }) {
             method: "POST",
             body: JSON.stringify({
               listing_id: listing.id,
-              check_in: startDate.toISOString().split('T')[0],
-              check_out: endDate.toISOString().split('T')[0],
+              check_in: formatDateKey(startDate),
+              check_out: formatDateKey(endDate),
               guests
             })
           });
@@ -69,8 +75,8 @@ export default function BookingWidget({ listing }: { listing: any }) {
       return;
     }
     const { startDate, endDate } = dateRange[0];
-    const ci = startDate.toISOString().split('T')[0];
-    const co = endDate.toISOString().split('T')[0];
+    const ci = formatDateKey(startDate);
+    const co = formatDateKey(endDate);
     
     // Redirect to Confirm and Pay page
     router.push(`/book/${listing.id}?check_in=${ci}&check_out=${co}&guests=${guests}`);
@@ -79,7 +85,7 @@ export default function BookingWidget({ listing }: { listing: any }) {
   return (
     <div className="bg-white border border-[color:var(--color-airbnb-border)] rounded-2xl p-6 shadow-[var(--shadow-airbnb)] sticky top-28">
       <div className="flex items-end gap-1 mb-6">
-        <span className="text-2xl font-bold">${listing.price_per_night}</span>
+        <span className="text-2xl font-bold">{formatINR(listing.price_per_night)}</span>
         <span className="text-neutral-500 mb-1">night</span>
       </div>
       
@@ -115,21 +121,21 @@ export default function BookingWidget({ listing }: { listing: any }) {
       {quote && (
         <div className="mt-4 flex flex-col gap-3 text-neutral-600">
           <div className="flex justify-between">
-            <span className="underline">${listing.price_per_night} x {quote.nights} nights</span>
-            <span>${quote.subtotal}</span>
+            <span className="underline">{formatINR(listing.price_per_night)} x {quote.nights} nights</span>
+            <span>{formatINR(quote.subtotal)}</span>
           </div>
           <div className="flex justify-between">
             <span className="underline">Cleaning fee</span>
-            <span>${quote.cleaning_fee}</span>
+            <span>{formatINR(quote.cleaning_fee)}</span>
           </div>
           <div className="flex justify-between">
             <span className="underline">Airbnb service fee</span>
-            <span>${quote.service_fee}</span>
+            <span>{formatINR(quote.service_fee)}</span>
           </div>
           <hr className="border-[color:var(--color-airbnb-border)]" />
           <div className="flex justify-between font-bold text-[color:var(--color-airbnb-text)] text-lg">
             <span>Total before taxes</span>
-            <span>${quote.total}</span>
+            <span>{formatINR(quote.total)}</span>
           </div>
         </div>
       )}

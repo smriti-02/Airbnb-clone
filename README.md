@@ -115,10 +115,8 @@ Screenshots are not committed yet. Add the images to `docs/screenshots/` and unc
 | Resource | Link |
 | :--- | :--- |
 | **GitHub repository** | [github.com/smriti-02/Airbnb-clone](https://github.com/smriti-02/Airbnb-clone) |
-| **Frontend web app** | TODO_FILL |
-| **Backend API base** | TODO_FILL |
-| **Interactive API docs (Swagger UI)** | TODO_FILL/docs |
-| **Backend health check** | TODO_FILL/health |
+| **Frontend web app** | [Vercel](https://airbnb-clone-iota-ten-99.vercel.app/) |
+| **Backend API base** | [Render](https://airbnb-clone-ho22.onrender.com) |
 
 > [!NOTE]
 > The backend runs on a free tier. After a period of inactivity the first API request can take up to 60 seconds while the server wakes up. Open the site once and wait a moment before testing.

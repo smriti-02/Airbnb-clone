@@ -36,6 +36,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+os.makedirs(os.path.join(os.path.dirname(__file__), "uploads"), exist_ok=True)
 app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 
 app.include_router(listings.router)

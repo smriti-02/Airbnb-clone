@@ -1,19 +1,10 @@
 import pytest
-from fastapi.testclient import TestClient
-from main import app
 from datetime import date, timedelta
-from database import get_db, Base, engine, SessionLocal
 from models.models import User, Listing
 
-client = TestClient(app)
-
-# Use test db
-Base.metadata.drop_all(bind=engine)
-Base.metadata.create_all(bind=engine)
-
-@pytest.fixture(scope="module")
-def db_session():
-    db = SessionLocal()
+@pytest.fixture(scope="function")
+def api_db_session(test_db_session):
+    db = test_db_session
     # Seed some data for tests
     host = User(id=1, name="Host", email="h@t.c", is_host=True)
     guest = User(id=2, name="Guest", email="g@t.c", is_host=False)
@@ -30,9 +21,8 @@ def db_session():
     db.commit()
     
     yield db
-    db.close()
 
-def test_price_calculation(db_session):
+def test_price_calculation(api_db_session, test_client):
     # Quote endpoint
     req = {
         "listing_id": 1,
@@ -40,7 +30,7 @@ def test_price_calculation(db_session):
         "check_out": str(date.today() + timedelta(days=4)), # 3 nights
         "guests": 2
     }
-    resp = client.post("/api/bookings/quote", json=req)
+    resp = test_client.post("/api/bookings/quote", json=req)
     assert resp.status_code == 200
     data = resp.json()
     assert data["nights"] == 3
@@ -49,7 +39,7 @@ def test_price_calculation(db_session):
     assert data["service_fee"] == 30.0 # 10% of 300
     assert data["total"] == 350.0
 
-def test_overlap_prevention(db_session):
+def test_overlap_prevention(api_db_session, test_client):
     headers = {"X-User-Id": "2"}
     # Book dates 10 to 15
     check_in = str(date.today() + timedelta(days=10))
@@ -62,7 +52,7 @@ def test_overlap_prevention(db_session):
         "guests": 2
     }
     
-    resp = client.post("/api/bookings", json=req, headers=headers)
+    resp = test_client.post("/api/bookings", json=req, headers=headers)
     assert resp.status_code == 200
     
     # Try to book overlapping dates (14 to 18)
@@ -70,17 +60,23 @@ def test_overlap_prevention(db_session):
     req2["check_in"] = str(date.today() + timedelta(days=14))
     req2["check_out"] = str(date.today() + timedelta(days=18))
     
-    resp2 = client.post("/api/bookings", json=req2, headers=headers)
+    resp2 = test_client.post("/api/bookings", json=req2, headers=headers)
     assert resp2.status_code == 409
     assert "no longer available" in resp2.json()["detail"]
     
-def test_search_filtering_by_dates(db_session):
+def test_search_filtering_by_dates(api_db_session, test_client):
+    headers = {"X-User-Id": "2"}
+    # Book dates 10 to 15
+    check_in = str(date.today() + timedelta(days=10))
+    check_out = str(date.today() + timedelta(days=15))
+    test_client.post("/api/bookings", json={"listing_id": 1, "check_in": check_in, "check_out": check_out, "guests": 2}, headers=headers)
+    
     # Since dates 10 to 15 are booked, searching for those dates should exclude listing 1
-    resp = client.get(f"/api/listings?check_in={str(date.today() + timedelta(days=10))}&check_out={str(date.today() + timedelta(days=12))}")
+    resp = test_client.get(f"/api/listings?check_in={str(date.today() + timedelta(days=10))}&check_out={str(date.today() + timedelta(days=12))}")
     assert resp.status_code == 200
     assert len(resp.json()["items"]) == 0
     
     # Searching for dates 15 to 20 should include it (since checkout is exactly on 15, they don't overlap)
-    resp = client.get(f"/api/listings?check_in={str(date.today() + timedelta(days=15))}&check_out={str(date.today() + timedelta(days=20))}")
+    resp = test_client.get(f"/api/listings?check_in={str(date.today() + timedelta(days=15))}&check_out={str(date.today() + timedelta(days=20))}")
     assert resp.status_code == 200
     assert len(resp.json()["items"]) == 1

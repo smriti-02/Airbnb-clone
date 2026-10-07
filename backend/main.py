@@ -23,9 +23,14 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="Airbnb Clone API", lifespan=lifespan)
 
+frontend_url = os.getenv("FRONTEND_URL", "http://localhost:3000")
+origins = [frontend_url]
+if "http://localhost:3000" not in origins:
+    origins.append("http://localhost:3000")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

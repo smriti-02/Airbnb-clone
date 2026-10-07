@@ -49,7 +49,7 @@ export const hostApi = {
   submitVerification: (formData: FormData) => hostApiFetchForm<{ message: string }>("/host/verification", formData),
   checkVerification: () => apiFetch<{ status: string }>("/host/verification", { method: "GET" }),
   addPhotos: (id: number, formData: FormData) => hostApiFetchForm<{ message: string }>(`/host/listings/${id}/photos`, formData),
-  addPhotoUrl: (id: number, url: string) => apiFetch<{ message: string }>(`/host/listings/${id}/photos`, { method: "POST", body: JSON.stringify({ url }), cache: "no-store" }),
+  addPhotoUrl: (id: number, url: string) => apiFetch<{ message: string }>(`/host/listings/${id}/photos/url`, { method: "POST", body: JSON.stringify({ url }), cache: "no-store" }),
   reorderPhotos: (id: number, ids: number[]) => apiFetch<{ message: string }>(`/host/listings/${id}/photos/order`, { method: "PUT", body: JSON.stringify({ ids }), cache: "no-store" }),
   deletePhoto: (listingId: number, photoId: number) => apiFetch<{ message: string }>(`/host/listings/${listingId}/photos/${photoId}`, { method: "DELETE", cache: "no-store" }),
   

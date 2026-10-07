@@ -201,7 +201,8 @@ export default function WizardShell() {
   const handleAutofill = async () => {
     toast.loading("Filling demo data...", { id: "autofill" });
     try {
-      if (!draft.photos || draft.photos.length < 5) {
+      let updated = await hostApi.getDraft(listingId);
+      if (!updated.photos || updated.photos.length < 5) {
         const demoPhotos = [
           "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
           "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
@@ -220,8 +221,9 @@ export default function WizardShell() {
           fd.append("file", new Blob(["mock"], { type: "text/plain" }), "mock.txt");
           await hostApi.submitVerification(fd);
         } catch (e) {}
+        
+        updated = await hostApi.getDraft(listingId);
       }
-      const updated = await hostApi.getDraft(listingId);
       const newDraftData = {
         photos: updated.photos,
         property_type: "Villa",

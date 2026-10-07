@@ -194,6 +194,16 @@ def delete_listing(id: int, db: Session = Depends(get_db), host: User = Depends(
     return {"message": "Deleted"}
 
 # 5. PHOTOS
+@router.post("/listings/{id}/photos/url")
+def add_photo_url(id: int, req: PhotoUrlRequest, db: Session = Depends(get_db), host: User = Depends(get_current_host)):
+    listing = db.query(Listing).filter(Listing.id == id, Listing.host_id == host.id).first()
+    if not listing: raise HTTPException(status_code=404)
+    if len(listing.photos) >= 20:
+        raise HTTPException(status_code=400, detail="Max 20 photos")
+    db.add(ListingPhoto(listing_id=id, url=req.url, position=len(listing.photos)))
+    db.commit()
+    return {"message": "Photo added"}
+
 @router.post("/listings/{id}/photos")
 def add_photos(id: int, db: Session = Depends(get_db), host: User = Depends(get_current_host), url_data: Optional[PhotoUrlRequest] = None, files: List[UploadFile] = File(None)):
     listing = db.query(Listing).filter(Listing.id == id, Listing.host_id == host.id).first()

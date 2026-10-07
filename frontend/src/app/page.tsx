@@ -35,8 +35,8 @@ function HomeContent() {
 
   return (
     <>
-      <div className="sticky top-[81px] z-30 bg-white shadow-sm border-b pb-4 pt-4">
-        <div className="max-w-[2520px] mx-auto xl:px-20 md:px-10 sm:px-2 px-4 flex items-center justify-between gap-4">
+      <div className="sticky top-[80px] z-30 bg-white border-b border-[#EBEBEB] py-4 h-[80px] flex items-center">
+        <div className="max-w-[2520px] mx-auto xl:px-20 md:px-10 sm:px-2 px-4 flex items-center justify-between gap-4 w-full">
           <div className="flex-1 overflow-hidden">
             <Categories />
           </div>
@@ -54,11 +54,24 @@ function HomeContent() {
           <HomeMap listings={listings} />
         ) : (
           <>
+            <div className="mb-6 mt-2">
+              <h1 className="text-2xl font-bold">
+                {total > 0 || !loading ? `${total} stay${total !== 1 ? 's' : ''}${searchParams.get('location') ? ` in ${searchParams.get('location')}` : ''}` : ''}
+              </h1>
+            </div>
             {listings.length === 0 && !loading ? (
               <div className="flex flex-col items-center justify-center py-20 text-center">
-                <h2 className="text-2xl font-bold mb-2">No exact matches</h2>
+                <h2 className="text-2xl font-bold mb-2">No stays match your search</h2>
                 <p className="text-neutral-500 mb-6">Try changing or removing some of your filters.</p>
-                <Button onClick={() => router.push("/")} primary>Remove all filters</Button>
+                <Button onClick={() => {
+                  const url = new URL(window.location.href);
+                  url.searchParams.delete('location');
+                  url.searchParams.delete('check_in');
+                  url.searchParams.delete('check_out');
+                  url.searchParams.delete('guests');
+                  url.searchParams.delete('page');
+                  router.push(url.pathname + url.search);
+                }} primary>Clear search</Button>
               </div>
             ) : (
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-6">

@@ -4,16 +4,17 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { useRouter } from "next/navigation";
 import { Star } from "lucide-react";
+import { formatINR } from "@/lib/format";
 
 // Create custom price pins
 const createPriceIcon = (price: number) => {
   return L.divIcon({
     className: "custom-price-marker",
     html: `<div style="background-color: white; border: 1px solid #ddd; border-radius: 20px; padding: 4px 10px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1); font-size: 14px; text-align: center; cursor: pointer; transition: transform 0.2s; white-space: nowrap;">
-             $${price}
+             ${formatINR(price)}
            </div>`,
-    iconSize: [auto, auto],
-    iconAnchor: [30, 15],
+    iconSize: [40, 28],
+    iconAnchor: [20, 14],
   });
 };
 
@@ -30,7 +31,7 @@ export default function HomeMap({ listings }: { listings: any[] }) {
       <MapContainer center={center} zoom={3} scrollWheelZoom={true} className="h-full w-full">
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         {listings.map(l => (
           l.latitude && l.longitude && (
@@ -48,7 +49,7 @@ export default function HomeMap({ listings }: { listings: any[] }) {
                       <span className="flex items-center gap-1 text-xs"><Star size={12} className="fill-black"/> {l.avg_rating || "New"}</span>
                     </div>
                     <div className="text-neutral-500 text-xs my-1">{l.title}</div>
-                    <div className="font-bold text-sm">${l.price_per_night} <span className="font-normal text-xs text-neutral-500">night</span></div>
+                    <div className="font-bold text-sm">{formatINR(l.price_per_night)} <span className="font-normal text-xs text-neutral-500">night</span></div>
                   </div>
                 </div>
               </Popup>

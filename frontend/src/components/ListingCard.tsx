@@ -1,12 +1,15 @@
 "use client";
 
-import { Heart, Star, ChevronLeft, ChevronRight } from "lucide-react";
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { Star, ChevronLeft, ChevronRight } from "lucide-react";
+import React, { useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import SafeImage from "./SafeImage";
+import { formatINR } from "@/lib/format";
+import WishlistButton from "./WishlistButton";
 
-export default function ListingCard({ data }: { data: any }) {
+export default React.memo(function ListingCard({ data }: { data: any }) {
   const router = useRouter();
-  const [isLiked, setIsLiked] = useState(false);
+  const searchParams = useSearchParams();
   const [currentIdx, setCurrentIdx] = useState(0);
 
   const photos = data.photos && data.photos.length > 0 
@@ -22,9 +25,18 @@ export default function ListingCard({ data }: { data: any }) {
     setCurrentIdx((prev) => (prev - 1 + photos.length) % photos.length);
   };
 
+  const handleCardClick = () => {
+    const params = new URLSearchParams();
+    if (searchParams.get("check_in")) params.set("check_in", searchParams.get("check_in")!);
+    if (searchParams.get("check_out")) params.set("check_out", searchParams.get("check_out")!);
+    if (searchParams.get("guests")) params.set("guests", searchParams.get("guests")!);
+    const qStr = params.toString();
+    router.push(`/listings/${data.id}${qStr ? '?' + qStr : ''}`);
+  };
+
   return (
     <div 
-      onClick={() => router.push(`/listings/${data.id}`)} 
+      onClick={handleCardClick} 
       className="col-span-1 cursor-pointer group"
     >
       <div className="flex flex-col gap-2 w-full">
@@ -34,35 +46,19 @@ export default function ListingCard({ data }: { data: any }) {
             style={{ transform: `translateX(-${currentIdx * 100}%)` }}
           >
             {photos.map((photo: any, i: number) => (
-              <img 
-                key={i}
-                src={photo.url} 
-                alt={data.title}
-                className="object-cover h-full min-w-full group-hover:scale-105 transition duration-300"
-              />
+              <div key={i} className="relative h-full min-w-full group-hover:scale-105 transition duration-300">
+                <SafeImage 
+                  src={photo.url} 
+                  alt={data.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
             ))}
           </div>
           
-          <div 
-            onClick={async (e) => { 
-              e.stopPropagation(); 
-              const newLiked = !isLiked;
-              setIsLiked(newLiked); 
-              try {
-                if (newLiked) {
-                  await fetch(`http://localhost:8000/api/wishlist/${data.id}`, { method: 'POST', headers: { 'X-User-Id': localStorage.getItem('userId') || '' } });
-                } else {
-                  await fetch(`http://localhost:8000/api/wishlist/${data.id}`, { method: 'DELETE', headers: { 'X-User-Id': localStorage.getItem('userId') || '' } });
-                }
-              } catch(e) {}
-            }}
-            className="absolute top-3 right-3 transition hover:scale-110 active:scale-95 z-10"
-          >
-            <Heart 
-              size={26} 
-              strokeWidth={isLiked ? 0 : 2}
-              className={`drop-shadow-md ${isLiked ? "fill-[color:var(--color-airbnb-primary)] text-[color:var(--color-airbnb-primary)]" : "fill-black/30 text-white"}`} 
-            />
+          <div className="absolute top-3 right-3 z-10">
+            <WishlistButton listingId={data.id} size={26} />
           </div>
 
           {photos.length > 1 && (
@@ -98,9 +94,13 @@ export default function ListingCard({ data }: { data: any }) {
         </div>
         
         <div className="flex flex-row items-center gap-1 mt-1 text-[color:var(--color-airbnb-text)]">
-          <span className="font-semibold">${data.price_per_night}</span> <span className="font-light">night</span>
+          {data.nights ? (
+             <><span className="font-semibold underline decoration-solid decoration-1 underline-offset-2">{formatINR(data.total_for_stay)}</span> <span className="font-light">total for {data.nights} night{data.nights>1?'s':''}</span></>
+          ) : (
+             <><span className="font-semibold">{formatINR(data.price_per_night)}</span> <span className="font-light">night</span></>
+          )}
         </div>
       </div>
     </div>
   );
-}
+});

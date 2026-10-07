@@ -4,8 +4,8 @@ import { useUser } from "@/contexts/UserContext";
 import { useRouter, usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import HostLogo from "@/components/Host/HostLogo";
-import HostMenuButton from "@/components/Host/HostMenuButton";
+import HostLogo from "@/components/host-components/HostLogo";
+import HostMenuButton from "@/components/host-components/HostMenuButton";
 import { useUserSwitchRedirect } from "@/lib/useUserSwitchRedirect";
 import { Check } from "lucide-react";
 

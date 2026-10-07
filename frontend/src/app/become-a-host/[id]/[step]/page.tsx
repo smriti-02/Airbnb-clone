@@ -7,21 +7,21 @@ import { hostApi } from "@/lib/hostApi";
 import { HostListingDraft } from "@/lib/hostTypes";
 import toast from "react-hot-toast";
 import Link from "next/link";
-import PropertyTypeStep from "@/components/Host/steps/PropertyTypeStep";
-import PlaceTypeStep from "@/components/Host/steps/PlaceTypeStep";
-import LocationStep from "@/components/Host/steps/LocationStep";
-import BasicsStep from "@/components/Host/steps/BasicsStep";
-import AmenitiesStep from "@/components/Host/steps/AmenitiesStep";
-import PhotosStep from "@/components/Host/steps/PhotosStep";
-import TitleStep from "@/components/Host/steps/TitleStep";
-import HighlightsStep from "@/components/Host/steps/HighlightsStep";
-import DescriptionStep from "@/components/Host/steps/DescriptionStep";
-import BookingSettingsStep from "@/components/Host/steps/BookingSettingsStep";
-import PriceStep from "@/components/Host/steps/PriceStep";
-import DiscountsStep from "@/components/Host/steps/DiscountsStep";
-import SafetyStep from "@/components/Host/steps/SafetyStep";
-import ReviewStep from "@/components/Host/steps/ReviewStep";
-import VerifyStep from "@/components/Host/steps/VerifyStep";
+import PropertyTypeStep from "@/components/host-components/steps/PropertyTypeStep";
+import PlaceTypeStep from "@/components/host-components/steps/PlaceTypeStep";
+import LocationStep from "@/components/host-components/steps/LocationStep";
+import BasicsStep from "@/components/host-components/steps/BasicsStep";
+import AmenitiesStep from "@/components/host-components/steps/AmenitiesStep";
+import PhotosStep from "@/components/host-components/steps/PhotosStep";
+import TitleStep from "@/components/host-components/steps/TitleStep";
+import HighlightsStep from "@/components/host-components/steps/HighlightsStep";
+import DescriptionStep from "@/components/host-components/steps/DescriptionStep";
+import BookingSettingsStep from "@/components/host-components/steps/BookingSettingsStep";
+import PriceStep from "@/components/host-components/steps/PriceStep";
+import DiscountsStep from "@/components/host-components/steps/DiscountsStep";
+import SafetyStep from "@/components/host-components/steps/SafetyStep";
+import ReviewStep from "@/components/host-components/steps/ReviewStep";
+import VerifyStep from "@/components/host-components/steps/VerifyStep";
 
 const WIZARD_STEPS = [
   { id: "stage-1", stage: 1, intro: true },

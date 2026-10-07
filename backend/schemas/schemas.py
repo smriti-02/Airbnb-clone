@@ -8,6 +8,9 @@ class UserSchema(BaseModel):
     email: str
     avatar_url: Optional[str] = None
     is_host: bool
+    phone: Optional[str] = None
+    phone_verified: bool = False
+    joined_at: Optional[date] = None
     class Config:
         from_attributes = True
 
@@ -49,15 +52,27 @@ class ListingCreate(ListingBase):
 class ListingSchema(ListingBase):
     id: int
     host_id: int
+    host: Optional[UserSchema] = None
     created_at: datetime
     updated_at: datetime
     photos: List[ListingPhotoSchema] = []
     amenities: List[AmenitySchema] = []
+    total_for_stay: Optional[float] = None
+    nights: Optional[int] = None
+    status: str = 'published'
+    wizard_step: str = 'done'
+    place_type: str = 'entire'
+    instant_book: bool = True
+    min_nights: int = 1
+    highlights: list = []
+    safety_details: dict = {}
+    new_listing_promo: bool = False
+    weekly_discount_pct: int = 0
+    monthly_discount_pct: int = 0
     class Config:
         from_attributes = True
 
 class ListingDetailSchema(ListingSchema):
-    host: UserSchema
     avg_rating: Optional[float] = None
     review_count: int = 0
 
@@ -85,6 +100,8 @@ class BookingQuoteResponse(BaseModel):
     cleaning_fee: float
     service_fee: float
     total: float
+    discount_amount: int = 0
+    discount_type: Optional[str] = None
 
 class BookingCreate(BookingQuoteRequest):
     pass
@@ -101,6 +118,9 @@ class BookingSchema(BaseModel):
     cleaning_fee: float
     service_fee: float
     total: float
+    discount_amount: int = 0
+    discount_type: Optional[str] = None
+    host_note: Optional[str] = None
     status: str
     created_at: datetime
     listing: Optional[ListingSchema] = None

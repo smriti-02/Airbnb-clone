@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Float, Boolean, ForeignKey, Date, DateTime, Table, CheckConstraint, Index, event
+from sqlalchemy import Column, Integer, String, Float, Boolean, ForeignKey, Date, DateTime, Table, CheckConstraint, Index, event, JSON
 from sqlalchemy.orm import relationship
 import sqlalchemy as sa
 from datetime import datetime
@@ -22,6 +22,8 @@ class User(Base):
     created_at = Column(DateTime, default=datetime.utcnow)
     bio = Column(String)
     joined_at = Column(Date)
+    phone = Column(String, unique=True, nullable=True)
+    phone_verified = Column(Boolean, default=False, server_default='0')
     
     listings = relationship("Listing", back_populates="host", cascade="all, delete-orphan")
     bookings = relationship("Booking", back_populates="guest", cascade="all, delete-orphan")
@@ -51,8 +53,21 @@ class Listing(Base):
     created_at = Column(DateTime, default=datetime.utcnow)
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
+    status = Column(String, default='published', server_default="'published'")
+    wizard_step = Column(String, default='done', server_default="'done'")
+    place_type = Column(String, default='entire', server_default="'entire'")
+    instant_book = Column(Boolean, default=True, server_default='1')
+    min_nights = Column(Integer, default=1, server_default='1')
+    highlights = Column(JSON, default=list, server_default='[]')
+    safety_details = Column(JSON, default=dict, server_default='{}')
+    new_listing_promo = Column(Boolean, default=False, server_default='0')
+    weekly_discount_pct = Column(Integer, default=0, server_default='0')
+    monthly_discount_pct = Column(Integer, default=0, server_default='0')
+    published_at = Column(DateTime, nullable=True)
+
     __table_args__ = (
         Index('idx_listings_city', 'city'),
+        Index('idx_listings_state', 'state'),
         Index('idx_listings_price', 'price_per_night'),
     )
 
@@ -94,6 +109,9 @@ class Booking(Base):
     service_fee = Column(Float)
     total = Column(Float)
     status = Column(String, default="confirmed") # confirmed, cancelled
+    discount_amount = Column(Integer, default=0, server_default='0')
+    discount_type = Column(String, nullable=True)
+    host_note = Column(String, nullable=True)
     created_at = Column(DateTime, default=datetime.utcnow)
 
     __table_args__ = (
@@ -149,3 +167,68 @@ def check_booking_overlap(mapper, connection, target):
         count = connection.scalar(stmt)
         if count > 0:
             raise ValueError("Overlapping confirmed booking exists for this listing.")
+
+class BlockedDate(Base):
+    __tablename__ = "blocked_dates"
+    listing_id = Column(Integer, ForeignKey("listings.id", ondelete="CASCADE"), primary_key=True)
+    date = Column(Date, primary_key=True)
+
+    __table_args__ = (
+        Index('idx_blocked_dates_listing_date', 'listing_id', 'date'),
+    )
+
+class PriceOverride(Base):
+    __tablename__ = "price_overrides"
+    listing_id = Column(Integer, ForeignKey("listings.id", ondelete="CASCADE"), primary_key=True)
+    date = Column(Date, primary_key=True)
+    price = Column(Integer, nullable=False)
+
+class HostVerification(Base):
+    __tablename__ = "host_verifications"
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), unique=True, nullable=False)
+    id_type = Column(String, nullable=False)
+    document_filename = Column(String, nullable=False)
+    status = Column(String, default='pending') # pending, verified, rejected
+    submitted_at = Column(DateTime, default=datetime.utcnow)
+    verified_at = Column(DateTime, nullable=True)
+
+class Conversation(Base):
+    __tablename__ = "conversations"
+    id = Column(Integer, primary_key=True, index=True)
+    listing_id = Column(Integer, ForeignKey("listings.id", ondelete="CASCADE"), nullable=False)
+    guest_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    host_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    booking_id = Column(Integer, ForeignKey("bookings.id", ondelete="SET NULL"), nullable=True)
+    created_at = Column(DateTime, default=datetime.utcnow)
+    last_message_at = Column(DateTime, default=datetime.utcnow)
+    
+    __table_args__ = (
+        sa.UniqueConstraint('listing_id', 'guest_id', name='uq_conversation_listing_guest'),
+        Index('idx_conversations_guest_last_msg', 'guest_id', 'last_message_at'),
+        Index('idx_conversations_host_last_msg', 'host_id', 'last_message_at'),
+    )
+
+    messages = relationship("Message", back_populates="conversation", cascade="all, delete-orphan")
+
+class Message(Base):
+    __tablename__ = "messages"
+    id = Column(Integer, primary_key=True, index=True)
+    conversation_id = Column(Integer, ForeignKey("conversations.id", ondelete="CASCADE"), nullable=False)
+    sender_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=True)
+    body = Column(String, nullable=False)
+    kind = Column(String, default="user") # 'user' | 'system'
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+    __table_args__ = (
+        CheckConstraint('length(body) >= 1 AND length(body) <= 2000', name='message_body_length'),
+        Index('idx_messages_conv_id', 'conversation_id', 'id'),
+    )
+
+    conversation = relationship("Conversation", back_populates="messages")
+
+class ConversationRead(Base):
+    __tablename__ = "conversation_reads"
+    conversation_id = Column(Integer, ForeignKey("conversations.id", ondelete="CASCADE"), primary_key=True)
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), primary_key=True)
+    last_read_message_id = Column(Integer, ForeignKey("messages.id", ondelete="CASCADE"), nullable=True)

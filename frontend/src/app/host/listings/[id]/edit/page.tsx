@@ -6,19 +6,19 @@ import { hostApi } from "@/lib/hostApi";
 import { HostListingDraft } from "@/lib/hostTypes";
 import toast from "react-hot-toast";
 
-import PhotosStep from "@/components/host/steps/PhotosStep";
-import TitleStep from "@/components/host/steps/TitleStep";
-import PropertyTypeStep from "@/components/host/steps/PropertyTypeStep";
-import PlaceTypeStep from "@/components/host/steps/PlaceTypeStep";
-import LocationStep from "@/components/host/steps/LocationStep";
-import BasicsStep from "@/components/host/steps/BasicsStep";
-import AmenitiesStep from "@/components/host/steps/AmenitiesStep";
-import HighlightsStep from "@/components/host/steps/HighlightsStep";
-import DescriptionStep from "@/components/host/steps/DescriptionStep";
-import BookingSettingsStep from "@/components/host/steps/BookingSettingsStep";
-import PriceStep from "@/components/host/steps/PriceStep";
-import DiscountsStep from "@/components/host/steps/DiscountsStep";
-import SafetyStep from "@/components/host/steps/SafetyStep";
+import PhotosStep from "@/components/Host/steps/PhotosStep";
+import TitleStep from "@/components/Host/steps/TitleStep";
+import PropertyTypeStep from "@/components/Host/steps/PropertyTypeStep";
+import PlaceTypeStep from "@/components/Host/steps/PlaceTypeStep";
+import LocationStep from "@/components/Host/steps/LocationStep";
+import BasicsStep from "@/components/Host/steps/BasicsStep";
+import AmenitiesStep from "@/components/Host/steps/AmenitiesStep";
+import HighlightsStep from "@/components/Host/steps/HighlightsStep";
+import DescriptionStep from "@/components/Host/steps/DescriptionStep";
+import BookingSettingsStep from "@/components/Host/steps/BookingSettingsStep";
+import PriceStep from "@/components/Host/steps/PriceStep";
+import DiscountsStep from "@/components/Host/steps/DiscountsStep";
+import SafetyStep from "@/components/Host/steps/SafetyStep";
 
 const SECTIONS = [
   { id: "photos", title: "Photo tour", comp: PhotosStep },

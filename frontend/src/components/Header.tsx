@@ -126,10 +126,10 @@ export default function Header() {
           
           {/* Top row: Logo, UserMenu */}
           <div className="flex flex-row items-center justify-between h-[80px] pointer-events-auto">
-            <div className="flex-1 relative z-30">
+            <div className="flex-1 relative z-50">
               <Logo />
             </div>
-            <div className="flex-1 flex justify-end relative z-30">
+            <div className="flex-1 flex justify-end relative z-50">
               <UserMenu />
             </div>
           </div>

@@ -4,6 +4,7 @@ import { useEffect, useState, ReactNode } from "react";
 import { DateRange } from "react-date-range";
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
+import { apiFetch } from "@/lib/api";
 
 export function CrossfadeWrapper({ activeKey, children }: { activeKey: string | null; children: ReactNode }) {
   const [displayKey, setDisplayKey] = useState(activeKey);
@@ -96,8 +97,7 @@ export function WherePanel({ location, setLocation }: { location: string, setLoc
     const fetchSuggestions = async () => {
       setLoading(true);
       try {
-        const res = await fetch(`http://localhost:8000/api/locations/suggest?q=${encodeURIComponent(location || '')}`);
-        const data = await res.json();
+        const data = await apiFetch<any[]>(`/locations/suggest?q=${encodeURIComponent(location || '')}`);
         setSuggestions(data);
       } catch (e) {}
       setLoading(false);

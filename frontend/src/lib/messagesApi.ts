@@ -1,5 +1,7 @@
+import { API_URL } from "./api";
+
 export const fetchConversations = async (userId: number, signal?: AbortSignal) => {
-  const res = await fetch(`http://localhost:8000/api/conversations`, {
+  const res = await fetch(`${API_URL}/conversations`, {
     headers: { 'X-User-Id': userId.toString() },
     signal
   });
@@ -8,7 +10,7 @@ export const fetchConversations = async (userId: number, signal?: AbortSignal) =
 };
 
 export const fetchUnreadCount = async (userId: number, signal?: AbortSignal) => {
-  const res = await fetch(`http://localhost:8000/api/messages/unread-count`, {
+  const res = await fetch(`${API_URL}/messages/unread-count`, {
     headers: { 'X-User-Id': userId.toString() },
     signal
   });
@@ -17,7 +19,7 @@ export const fetchUnreadCount = async (userId: number, signal?: AbortSignal) => 
 };
 
 export const fetchConversation = async (conversationId: number, userId: number, signal?: AbortSignal) => {
-  const res = await fetch(`http://localhost:8000/api/conversations/${conversationId}`, {
+  const res = await fetch(`${API_URL}/conversations/${conversationId}`, {
     headers: { 'X-User-Id': userId.toString() },
     signal
   });
@@ -26,7 +28,7 @@ export const fetchConversation = async (conversationId: number, userId: number, 
 };
 
 export const sendMessage = async (conversationId: number, body: string, userId: number) => {
-  const res = await fetch(`http://localhost:8000/api/conversations/${conversationId}/messages`, {
+  const res = await fetch(`${API_URL}/conversations/${conversationId}/messages`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -39,7 +41,7 @@ export const sendMessage = async (conversationId: number, body: string, userId: 
 };
 
 export const markConversationRead = async (conversationId: number, userId: number) => {
-  const res = await fetch(`http://localhost:8000/api/conversations/${conversationId}/read`, {
+  const res = await fetch(`${API_URL}/conversations/${conversationId}/read`, {
     method: 'POST',
     headers: { 'X-User-Id': userId.toString() }
   });
@@ -48,7 +50,7 @@ export const markConversationRead = async (conversationId: number, userId: numbe
 };
 
 export const getOrCreateConversation = async (listingId: number, userId: number, message?: string) => {
-  const res = await fetch(`http://localhost:8000/api/conversations`, {
+  const res = await fetch(`${API_URL}/conversations`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

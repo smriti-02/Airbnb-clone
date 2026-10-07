@@ -316,96 +316,9 @@ Airbnb-clone/
 
 ### ER diagram
 
-```mermaid
-erDiagram
-    users {
-        int id PK
-        string name
-        string email
-        boolean is_host
-    }
-    listings {
-        int id PK
-        int host_id FK
-        string title
-        string city
-        int beds
-        string status
-        float price_per_night
-    }
-    bookings {
-        int id PK
-        int listing_id FK
-        int guest_id FK
-        date check_in
-        date check_out
-        string status
-    }
-    reviews {
-        int id PK
-        int listing_id FK
-        int booking_id FK
-        int rating
-    }
-    listing_photos {
-        int id PK
-        int listing_id FK
-    }
-    amenities {
-        int id PK
-        string name
-    }
-    listing_amenities {
-        int listing_id FK
-        int amenity_id FK
-    }
-    wishlists {
-        int user_id PK,FK
-        int listing_id PK,FK
-    }
-    blocked_dates {
-        int listing_id PK,FK
-        date date PK
-    }
-    price_overrides {
-        int listing_id PK,FK
-        date date PK
-    }
-    conversations {
-        int id PK
-        int listing_id FK
-        int guest_id FK
-        int host_id FK
-    }
-    messages {
-        int id PK
-        int conversation_id FK
-        int sender_id FK
-        string body
-    }
-    host_verifications {
-        int id PK
-        int user_id FK
-        string status
-    }
+<p align="center"> <img src="backend/docs/diagrams/er-diagram.png" alt="Entity relationship diagram" width="100%"> </p>
 
-    users ||--o{ listings : "hosts"
-    users ||--o{ bookings : "makes"
-    listings ||--o{ bookings : "receives"
-    bookings ||--o| reviews : "has"
-    listings ||--o{ reviews : "gets"
-    listings ||--o{ listing_photos : "has"
-    listings ||--o{ listing_amenities : "offers"
-    amenities ||--o{ listing_amenities : "listed in"
-    users ||--o{ wishlists : "saves"
-    listings ||--o{ wishlists : "saved in"
-    listings ||--o{ blocked_dates : "blocks"
-    listings ||--o{ price_overrides : "overrides"
-    listings ||--o{ conversations : "discussed in"
-    users ||--o{ conversations : "takes part in"
-    conversations ||--o{ messages : "contains"
-    users ||--o{ host_verifications : "submits"
-```
+Crow's-foot notation: || = exactly one, o< = zero or many. PK = primary key, FK = foreign key. Vector version: er-diagram.svg.
 
 *The core of the schema: users own listings, guests make bookings against listings, and reviews, wishlists, messages and host tools hang off those two tables. Only the main columns are shown.*
 

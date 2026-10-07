@@ -58,6 +58,7 @@ export interface Reservation {
   created_at: string;
   host_note?: string;
   guest_name?: string;
+  host_earning?: number;
   guest_avatar?: string;
   listing_title?: string;
   listing_cover?: string;

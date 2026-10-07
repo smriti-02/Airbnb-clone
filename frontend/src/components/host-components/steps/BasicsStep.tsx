@@ -35,7 +35,7 @@ export default function BasicsStep({ value, onChange }: { value: HostListingDraf
                 disabled={(value[s.id] as number || s.min) <= s.min}
                 className="w-8 h-8 rounded-full border flex items-center justify-center hover:border-black disabled:opacity-30"
               >-</button>
-              <span className="w-4 text-center">{value[s.id] || s.min}</span>
+              <span className="w-4 text-center">{ (value[s.id as keyof HostListingDraft] as number) || s.min }</span>
               <button 
                 onClick={() => inc(s.id, s.max)}
                 disabled={(value[s.id] as number || s.min) >= s.max}

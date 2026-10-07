@@ -3,7 +3,9 @@ import { Button } from "@/components/UI";
 import { useRouter, useSearchParams } from "next/navigation";
 import { CheckCircle2 } from "lucide-react";
 
-export default function SuccessPage() {
+import { Suspense } from "react";
+
+function SuccessContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
@@ -20,5 +22,13 @@ export default function SuccessPage() {
         <Button onClick={() => router.push("/")}>Explore more</Button>
       </div>
     </div>
+  );
+}
+
+export default function SuccessPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <SuccessContent />
+    </Suspense>
   );
 }

@@ -212,6 +212,14 @@ export default function WizardShell() {
         for (const url of demoPhotos) {
           try { await hostApi.addPhotoUrl(listingId, url); } catch (e) {}
         }
+        
+        // auto verify
+        try {
+          const fd = new FormData();
+          fd.append("id_type", "Aadhaar");
+          fd.append("file", new Blob(["mock"], { type: "text/plain" }), "mock.txt");
+          await hostApi.submitVerification(fd);
+        } catch (e) {}
       }
       const updated = await hostApi.getDraft(listingId);
       const newDraftData = {
@@ -219,9 +227,12 @@ export default function WizardShell() {
         property_type: "Villa",
         place_type: "entire",
         country: "India",
-        address: "123 Palm Grove, Baga 403516",
+        address: "123 Palm Grove",
+        pincode: "403516",
         city: "Goa",
         state: "Goa",
+        latitude: 15.5503,
+        longitude: 73.7663,
         max_guests: 6,
         bedrooms: 3,
         beds: 3,

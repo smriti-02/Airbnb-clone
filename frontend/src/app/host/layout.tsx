@@ -25,9 +25,9 @@ export default function HostLayout({ children }: { children: React.ReactNode }) 
     if (!isLoading) {
       setHydrated(true);
       if (!user) {
-        router.replace("/become-a-host/signup");
+        router.replace("/");
       } else if (!user.is_host) {
-        router.replace("/become-a-host");
+        router.replace("/");
       }
     }
   }, [user, isLoading, router]);

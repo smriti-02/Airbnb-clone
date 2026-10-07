@@ -106,7 +106,7 @@ export default function ListingsPage() {
                       <div className="w-full bg-gray-200 rounded-full h-1.5 mb-2">
                         <div className="bg-black h-1.5 rounded-full" style={{ width: `${l.completion_pct || 0}%` }}></div>
                       </div>
-                      <Link href={`/become-a-host/${l.id}/${l.wizard_step || "property-type"}`} className="font-semibold underline text-sm">Continue</Link>
+                      <Link href={`/become-a-host/${l.id}/${l.wizard_step || "structure"}`} className="font-semibold underline text-sm">Continue</Link>
                     </div>
                   ) : (
                     <div className="flex items-center gap-2 relative">

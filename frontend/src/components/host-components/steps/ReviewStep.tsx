@@ -51,7 +51,7 @@ export default function ReviewStep({ value }: { value: HostListingDraft }) {
               <p className="font-semibold">Settings</p>
               <p className="text-gray-500">{value.property_type}</p>
             </div>
-            <Link href={`/become-a-host/${id}/property-type`} className="underline font-semibold text-sm">Edit</Link>
+            <Link href={`/become-a-host/${id}/structure`} className="underline font-semibold text-sm">Edit</Link>
           </div>
           
           <div className="flex justify-between py-4 border-b">

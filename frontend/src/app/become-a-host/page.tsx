@@ -33,13 +33,13 @@ export default function BecomeAHostIntro() {
   const handleStart = async () => {
     try {
       const draft = await hostApi.createDraft();
-      router.push(`/become-a-host/${draft.id}/property-type`);
+      router.push(`/become-a-host/${draft.id}/structure`);
     } catch (err: any) {
       toast.error(err.message || "Failed to start");
     }
   };
 
-  const handleContinue = (id: number, step: string = "property-type") => {
+  const handleContinue = (id: number, step: string = "structure") => {
     router.push(`/become-a-host/${id}/${step}`);
   };
 

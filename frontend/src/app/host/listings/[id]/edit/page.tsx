@@ -23,7 +23,7 @@ import SafetyStep from "@/components/host-components/steps/SafetyStep";
 const SECTIONS = [
   { id: "photos", title: "Photo tour", comp: PhotosStep },
   { id: "title", title: "Title", comp: TitleStep },
-  { id: "property-type", title: "Property type", comp: PropertyTypeStep },
+  { id: "structure", title: "Property type", comp: PropertyTypeStep },
   { id: "place-type", title: "Place type", comp: PlaceTypeStep },
   { id: "location", title: "Location", comp: LocationStep },
   { id: "basics", title: "Basics", comp: BasicsStep },

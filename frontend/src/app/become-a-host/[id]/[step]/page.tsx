@@ -214,7 +214,7 @@ export default function WizardShell() {
         }
       }
       const updated = await hostApi.getDraft(listingId);
-      updateDraft({
+      const newDraftData = {
         photos: updated.photos,
         property_type: "Villa",
         place_type: "entire",
@@ -232,8 +232,19 @@ export default function WizardShell() {
         price_per_night: 8500,
         cleaning_fee: 1200,
         instant_book: true
-      });
+      };
+      updateDraft(newDraftData);
+      
       toast.success("Demo data filled!", { id: "autofill" });
+      
+      const nextStep = WIZARD_STEPS[stepIndex + 1];
+      if (nextStep && stepSlug !== "publish") {
+        await hostApi.updateDraft(listingId, { 
+          ...sanitizeDraftForApi({ ...draft, ...newDraftData }), 
+          wizard_step: nextStep.id 
+        });
+        router.push(`/become-a-host/${listingId}/${nextStep.id}`);
+      }
     } catch(err) {
       toast.error("Failed to fill demo data", { id: "autofill" });
     }

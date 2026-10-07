@@ -94,9 +94,15 @@ def update_draft(id: int, req: ListingPatchRequest, db: Session = Depends(get_db
             if h not in VALID_HIGHLIGHTS:
                 raise HTTPException(status_code=422, detail=f"Invalid highlight: {h}")
 
+    from models.models import Amenity
     for k, v in update_data.items():
         if hasattr(listing, k):
-            setattr(listing, k, v)
+            if k == 'amenities':
+                if v is not None:
+                    amenities = db.query(Amenity).filter(Amenity.id.in_(v)).all()
+                    listing.amenities = amenities
+            else:
+                setattr(listing, k, v)
             
     # Check if we broke published requirements
     if listing.status == 'published':

@@ -2,7 +2,7 @@
 
 <h1 align="center">Airbnb Clone</h1>
 
-<video src="backend/docs/demo.mp4" controls width="100%"></video>
+<video src="backend/docs/brag-v2.mp4" controls width="100%"></video>
 
 
 <p align="center">

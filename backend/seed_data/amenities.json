@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Wifi",
+    "icon": "wifi"
+  },
+  {
+    "id": 2,
+    "name": "Kitchen",
+    "icon": "kitchen"
+  },
+  {
+    "id": 3,
+    "name": "Air conditioning",
+    "icon": "ac"
+  },
+  {
+    "id": 4,
+    "name": "Power backup",
+    "icon": "power"
+  },
+  {
+    "id": 5,
+    "name": "Hot water (geyser)",
+    "icon": "geyser"
+  },
+  {
+    "id": 6,
+    "name": "Free parking",
+    "icon": "parking"
+  },
+  {
+    "id": 7,
+    "name": "Pool",
+    "icon": "pool"
+  },
+  {
+    "id": 8,
+    "name": "Pet friendly",
+    "icon": "pets"
+  },
+  {
+    "id": 9,
+    "name": "Bonfire",
+    "icon": "fire-pit"
+  },
+  {
+    "id": 10,
+    "name": "Mountain view",
+    "icon": "mountain"
+  },
+  {
+    "id": 11,
+    "name": "Beach access",
+    "icon": "water"
+  },
+  {
+    "id": 12,
+    "name": "Cook / caretaker on call",
+    "icon": "chef"
+  },
+  {
+    "id": 13,
+    "name": "Garden",
+    "icon": "garden"
+  },
+  {
+    "id": 14,
+    "name": "Balcony",
+    "icon": "balcony"
+  },
+  {
+    "id": 15,
+    "name": "TV",
+    "icon": "tv"
+  },
+  {
+    "id": 16,
+    "name": "Washing machine",
+    "icon": "washer"
+  },
+  {
+    "id": 17,
+    "name": "Breakfast included",
+    "icon": "breakfast"
+  },
+  {
+    "id": 18,
+    "name": "Workspace",
+    "icon": "workspace"
+  },
+  {
+    "id": 19,
+    "name": "Hot tub",
+    "icon": "hot-tub"
+  },
+  {
+    "id": 20,
+    "name": "EV charger",
+    "icon": "ev"
+  }
+]

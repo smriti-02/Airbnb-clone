@@ -1,0 +1,4304 @@
+[
+  {
+    "id": 1,
+    "host_id": 4,
+    "title": "Luxury desert camp under the stars in Mussoorie",
+    "description": "Experience the magic of the Thar desert. Luxurious swiss tents with en-suite bathrooms, traditional folk performances, and camel safaris at sunset.",
+    "property_type": "Amazing views",
+    "price_per_night": 6422.0,
+    "cleaning_fee": 1199.0,
+    "service_fee_pct": 0.14,
+    "city": "Mussoorie",
+    "state": "UK",
+    "country": "India",
+    "address": "Camel's Back Road, Mussoorie, UK 248179",
+    "latitude": 30.467184570039596,
+    "longitude": 78.08011407680759,
+    "max_guests": 10,
+    "bedrooms": 6,
+    "beds": 6,
+    "bathrooms": 1.0,
+    "created_at": "2026-10-06T18:35:25.841004",
+    "updated_at": "2026-10-06T18:35:25.841010",
+    "photos": [
+      {
+        "id": 1,
+        "listing_id": 1,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 2,
+        "listing_id": 1,
+        "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 3,
+        "listing_id": 1,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 4,
+        "listing_id": 1,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 5,
+        "listing_id": 1,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Kitchen",
+      "Air conditioning",
+      "Power backup",
+      "Bonfire",
+      "Mountain view",
+      "Beach access",
+      "Cook / caretaker on call",
+      "Garden"
+    ]
+  },
+  {
+    "id": 2,
+    "host_id": 3,
+    "title": "Deodar cabin with Himalayan views in Ahmedabad",
+    "description": "Nestled amidst ancient Deodar trees, this cozy wooden cabin offers unobstructed views of the snow-capped Himalayan ranges. Perfect for a peaceful mountain retreat.",
+    "property_type": "Tropical",
+    "price_per_night": 4287.0,
+    "cleaning_fee": 2054.0,
+    "service_fee_pct": 0.14,
+    "city": "Ahmedabad",
+    "state": "GJ",
+    "country": "India",
+    "address": "Vastrapur, Ahmedabad, GJ 380015",
+    "latitude": 23.0497129153441,
+    "longitude": 72.52717602020562,
+    "max_guests": 4,
+    "bedrooms": 2,
+    "beds": 2,
+    "bathrooms": 1.5,
+    "created_at": "2026-10-06T18:35:25.848267",
+    "updated_at": "2026-10-06T18:35:25.848273",
+    "photos": [
+      {
+        "id": 6,
+        "listing_id": 2,
+        "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 7,
+        "listing_id": 2,
+        "url": "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 8,
+        "listing_id": 2,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 9,
+        "listing_id": 2,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 10,
+        "listing_id": 2,
+        "url": "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Kitchen",
+      "Air conditioning",
+      "Power backup",
+      "Beach access",
+      "Washing machine",
+      "Breakfast included",
+      "Workspace"
+    ]
+  },
+  {
+    "id": 3,
+    "host_id": 4,
+    "title": "Modern tiny home in South Goa",
+    "description": "A sustainable, minimalist tiny home nestled in a lush mango orchard. Unplug and reconnect with nature without sacrificing modern comforts.",
+    "property_type": "Villas",
+    "price_per_night": 38674.0,
+    "cleaning_fee": 347.0,
+    "service_fee_pct": 0.14,
+    "city": "South Goa",
+    "state": "GA",
+    "country": "India",
+    "address": "Colva Beach Road, South Goa, GA 403708",
+    "latitude": 15.280811336410261,
+    "longitude": 73.89808206971935,
+    "max_guests": 9,
+    "bedrooms": 3,
+    "beds": 5,
+    "bathrooms": 3.0,
+    "created_at": "2026-10-06T18:35:25.854711",
+    "updated_at": "2026-10-06T18:35:25.854718",
+    "photos": [
+      {
+        "id": 11,
+        "listing_id": 3,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 12,
+        "listing_id": 3,
+        "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 13,
+        "listing_id": 3,
+        "url": "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 14,
+        "listing_id": 3,
+        "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 15,
+        "listing_id": 3,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Power backup",
+      "Free parking",
+      "Pet friendly",
+      "Mountain view",
+      "Beach access",
+      "Cook / caretaker on call",
+      "Garden",
+      "Balcony"
+    ]
+  },
+  {
+    "id": 4,
+    "host_id": 2,
+    "title": "Urban luxury apartment in Shimla",
+    "description": "Stay in the heart of Mumbai's most happening neighborhood. This modern, fully-equipped apartment is walking distance to top restaurants, cafes, and the sea link.",
+    "property_type": "Villas",
+    "price_per_night": 18016.0,
+    "cleaning_fee": 1627.0,
+    "service_fee_pct": 0.14,
+    "city": "Shimla",
+    "state": "HP",
+    "country": "India",
+    "address": "Mall Road, Shimla, HP 171001",
+    "latitude": 31.10434422832116,
+    "longitude": 77.15787470901283,
+    "max_guests": 3,
+    "bedrooms": 1,
+    "beds": 3,
+    "bathrooms": 2.0,
+    "created_at": "2026-10-06T18:35:25.862595",
+    "updated_at": "2026-10-06T18:35:25.862602",
+    "photos": [
+      {
+        "id": 16,
+        "listing_id": 4,
+        "url": "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 17,
+        "listing_id": 4,
+        "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 18,
+        "listing_id": 4,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 19,
+        "listing_id": 4,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 20,
+        "listing_id": 4,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Kitchen",
+      "Air conditioning",
+      "Pet friendly",
+      "Bonfire",
+      "Cook / caretaker on call",
+      "Breakfast included",
+      "Workspace",
+      "Hot tub",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 5,
+    "host_id": 3,
+    "title": "Deodar cabin with Himalayan views in Ooty",
+    "description": "Nestled amidst ancient Deodar trees, this cozy wooden cabin offers unobstructed views of the snow-capped Himalayan ranges. Perfect for a peaceful mountain retreat.",
+    "property_type": "Apartment",
+    "price_per_night": 5822.0,
+    "cleaning_fee": 1123.0,
+    "service_fee_pct": 0.14,
+    "city": "Ooty",
+    "state": "TN",
+    "country": "India",
+    "address": "Botanical Garden Road, Ooty, TN 643001",
+    "latitude": 11.418517958912766,
+    "longitude": 76.6909596919999,
+    "max_guests": 6,
+    "bedrooms": 4,
+    "beds": 5,
+    "bathrooms": 2.0,
+    "created_at": "2026-10-06T18:35:25.868211",
+    "updated_at": "2026-10-06T18:35:25.868218",
+    "photos": [
+      {
+        "id": 21,
+        "listing_id": 5,
+        "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 22,
+        "listing_id": 5,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 23,
+        "listing_id": 5,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 24,
+        "listing_id": 5,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 25,
+        "listing_id": 5,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Kitchen",
+      "Power backup",
+      "Free parking",
+      "Pet friendly",
+      "Bonfire",
+      "Mountain view",
+      "Cook / caretaker on call",
+      "TV",
+      "Breakfast included",
+      "Workspace",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 6,
+    "host_id": 1,
+    "title": "Houseboat on the Alleppey backwaters in Mussoorie",
+    "description": "Drift peacefully through Kerala's famous backwaters. Our traditional Kettuvallam features air-conditioned bedrooms and a private chef serving fresh local seafood.",
+    "property_type": "Treehouses",
+    "price_per_night": 7913.0,
+    "cleaning_fee": 2288.0,
+    "service_fee_pct": 0.14,
+    "city": "Mussoorie",
+    "state": "UK",
+    "country": "India",
+    "address": "Camel's Back Road, Mussoorie, UK 248179",
+    "latitude": 30.448369472294818,
+    "longitude": 78.051692473949,
+    "max_guests": 2,
+    "bedrooms": 1,
+    "beds": 1,
+    "bathrooms": 3.0,
+    "created_at": "2026-10-06T18:35:25.873257",
+    "updated_at": "2026-10-06T18:35:25.873267",
+    "photos": [
+      {
+        "id": 26,
+        "listing_id": 6,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 27,
+        "listing_id": 6,
+        "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 28,
+        "listing_id": 6,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 29,
+        "listing_id": 6,
+        "url": "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 30,
+        "listing_id": 6,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Kitchen",
+      "Free parking",
+      "Pool",
+      "Pet friendly",
+      "Bonfire",
+      "Mountain view",
+      "Beach access",
+      "Cook / caretaker on call",
+      "Balcony",
+      "TV",
+      "Washing machine",
+      "Workspace",
+      "Hot tub",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 7,
+    "host_id": 4,
+    "title": "Heritage haveli near the City Palace in Pune",
+    "description": "Experience royal living in this beautifully restored 19th-century haveli. Enjoy authentic local cuisine and panoramic views of the city from our rooftop terrace.",
+    "property_type": "Villas",
+    "price_per_night": 30236.0,
+    "cleaning_fee": 1079.0,
+    "service_fee_pct": 0.14,
+    "city": "Pune",
+    "state": "MH",
+    "country": "India",
+    "address": "Koregaon Park, Pune, MH 411001",
+    "latitude": 18.537651430156416,
+    "longitude": 73.8795072918838,
+    "max_guests": 2,
+    "bedrooms": 1,
+    "beds": 1,
+    "bathrooms": 1.5,
+    "created_at": "2026-10-06T18:35:25.877547",
+    "updated_at": "2026-10-06T18:35:25.877552",
+    "photos": [
+      {
+        "id": 31,
+        "listing_id": 7,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 32,
+        "listing_id": 7,
+        "url": "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 33,
+        "listing_id": 7,
+        "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 34,
+        "listing_id": 7,
+        "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 35,
+        "listing_id": 7,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Air conditioning",
+      "Power backup",
+      "Pet friendly",
+      "Bonfire",
+      "Beach access",
+      "TV",
+      "Breakfast included",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 8,
+    "host_id": 2,
+    "title": "Luxury desert camp under the stars in Kolkata",
+    "description": "Experience the magic of the Thar desert. Luxurious swiss tents with en-suite bathrooms, traditional folk performances, and camel safaris at sunset.",
+    "property_type": "Tropical",
+    "price_per_night": 8570.0,
+    "cleaning_fee": 308.0,
+    "service_fee_pct": 0.14,
+    "city": "Kolkata",
+    "state": "WB",
+    "country": "India",
+    "address": "Park Street, Kolkata, WB 700016",
+    "latitude": 22.57101235375119,
+    "longitude": 88.34300812232689,
+    "max_guests": 2,
+    "bedrooms": 1,
+    "beds": 1,
+    "bathrooms": 2.5,
+    "created_at": "2026-10-06T18:35:25.880379",
+    "updated_at": "2026-10-06T18:35:25.880385",
+    "photos": [
+      {
+        "id": 36,
+        "listing_id": 8,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 37,
+        "listing_id": 8,
+        "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 38,
+        "listing_id": 8,
+        "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 39,
+        "listing_id": 8,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 40,
+        "listing_id": 8,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Power backup",
+      "Hot water (geyser)",
+      "Pool",
+      "Mountain view",
+      "Balcony",
+      "Washing machine",
+      "Breakfast included",
+      "Workspace"
+    ]
+  },
+  {
+    "id": 9,
+    "host_id": 4,
+    "title": "Heritage haveli near the City Palace in Indore",
+    "description": "Experience royal living in this beautifully restored 19th-century haveli. Enjoy authentic local cuisine and panoramic views of the city from our rooftop terrace.",
+    "property_type": "Cabins",
+    "price_per_night": 10738.0,
+    "cleaning_fee": 2380.0,
+    "service_fee_pct": 0.14,
+    "city": "Indore",
+    "state": "MP",
+    "country": "India",
+    "address": "Palasia, Indore, MP 452001",
+    "latitude": 22.702804458609624,
+    "longitude": 75.84513299843923,
+    "max_guests": 5,
+    "bedrooms": 2,
+    "beds": 5,
+    "bathrooms": 3.0,
+    "created_at": "2026-10-06T18:35:25.884628",
+    "updated_at": "2026-10-06T18:35:25.884645",
+    "photos": [
+      {
+        "id": 41,
+        "listing_id": 9,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 42,
+        "listing_id": 9,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 43,
+        "listing_id": 9,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 44,
+        "listing_id": 9,
+        "url": "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 45,
+        "listing_id": 9,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Kitchen",
+      "Power backup",
+      "Pet friendly",
+      "Mountain view",
+      "Garden",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 10,
+    "host_id": 3,
+    "title": "Tranquil tea estate bungalow in Ahmedabad",
+    "description": "Step back in time in this colonial-era bungalow surrounded by rolling tea gardens. Includes a private chef, guided estate walks, and vintage teakwood furniture.",
+    "property_type": "Apartment",
+    "price_per_night": 3173.0,
+    "cleaning_fee": 1277.0,
+    "service_fee_pct": 0.14,
+    "city": "Ahmedabad",
+    "state": "GJ",
+    "country": "India",
+    "address": "Vastrapur, Ahmedabad, GJ 380015",
+    "latitude": 23.024424580501254,
+    "longitude": 72.51643513128509,
+    "max_guests": 8,
+    "bedrooms": 6,
+    "beds": 6,
+    "bathrooms": 2.0,
+    "created_at": "2026-10-06T18:35:25.892111",
+    "updated_at": "2026-10-06T18:35:25.892120",
+    "photos": [
+      {
+        "id": 46,
+        "listing_id": 10,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 47,
+        "listing_id": 10,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 48,
+        "listing_id": 10,
+        "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 49,
+        "listing_id": 10,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 50,
+        "listing_id": 10,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Kitchen",
+      "Air conditioning",
+      "Power backup",
+      "Hot water (geyser)",
+      "Free parking",
+      "Bonfire",
+      "Beach access",
+      "Balcony",
+      "TV",
+      "Washing machine",
+      "Hot tub"
+    ]
+  },
+  {
+    "id": 11,
+    "host_id": 3,
+    "title": "Luxury desert camp under the stars in Mumbai",
+    "description": "Experience the magic of the Thar desert. Luxurious swiss tents with en-suite bathrooms, traditional folk performances, and camel safaris at sunset.",
+    "property_type": "Villas",
+    "price_per_night": 42664.0,
+    "cleaning_fee": 850.0,
+    "service_fee_pct": 0.14,
+    "city": "Mumbai",
+    "state": "MH",
+    "country": "India",
+    "address": "Bandra West, Mumbai, MH 400050",
+    "latitude": 19.050178636859485,
+    "longitude": 72.84508850828023,
+    "max_guests": 2,
+    "bedrooms": 1,
+    "beds": 1,
+    "bathrooms": 3.0,
+    "created_at": "2026-10-06T18:35:25.896041",
+    "updated_at": "2026-10-06T18:35:25.896048",
+    "photos": [
+      {
+        "id": 51,
+        "listing_id": 11,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 52,
+        "listing_id": 11,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 53,
+        "listing_id": 11,
+        "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 54,
+        "listing_id": 11,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 55,
+        "listing_id": 11,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Pool",
+      "Bonfire",
+      "Mountain view",
+      "Beach access",
+      "TV",
+      "Breakfast included",
+      "Workspace"
+    ]
+  },
+  {
+    "id": 12,
+    "host_id": 4,
+    "title": "Houseboat on the Alleppey backwaters in North Goa",
+    "description": "Drift peacefully through Kerala's famous backwaters. Our traditional Kettuvallam features air-conditioned bedrooms and a private chef serving fresh local seafood.",
+    "property_type": "Cabins",
+    "price_per_night": 7033.0,
+    "cleaning_fee": 835.0,
+    "service_fee_pct": 0.14,
+    "city": "North Goa",
+    "state": "GA",
+    "country": "India",
+    "address": "Beach Road, North Goa, GA 403509",
+    "latitude": 15.599184535092055,
+    "longitude": 73.72847821049737,
+    "max_guests": 2,
+    "bedrooms": 1,
+    "beds": 1,
+    "bathrooms": 2.5,
+    "created_at": "2026-10-06T18:35:25.898127",
+    "updated_at": "2026-10-06T18:35:25.898134",
+    "photos": [
+      {
+        "id": 56,
+        "listing_id": 12,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 57,
+        "listing_id": 12,
+        "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 58,
+        "listing_id": 12,
+        "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 59,
+        "listing_id": 12,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 60,
+        "listing_id": 12,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Air conditioning",
+      "Power backup",
+      "Free parking",
+      "Bonfire",
+      "Cook / caretaker on call",
+      "Garden",
+      "Balcony",
+      "TV",
+      "Washing machine",
+      "Workspace",
+      "Hot tub",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 13,
+    "host_id": 2,
+    "title": "Tranquil tea estate bungalow in Lonavala",
+    "description": "Step back in time in this colonial-era bungalow surrounded by rolling tea gardens. Includes a private chef, guided estate walks, and vintage teakwood furniture.",
+    "property_type": "Cabins",
+    "price_per_night": 6588.0,
+    "cleaning_fee": 1964.0,
+    "service_fee_pct": 0.14,
+    "city": "Lonavala",
+    "state": "MH",
+    "country": "India",
+    "address": "Bhushi Dam, Lonavala, MH 410401",
+    "latitude": 18.767053480905492,
+    "longitude": 73.41707910444575,
+    "max_guests": 8,
+    "bedrooms": 1,
+    "beds": 6,
+    "bathrooms": 1.5,
+    "created_at": "2026-10-06T18:35:25.901190",
+    "updated_at": "2026-10-06T18:35:25.901196",
+    "photos": [
+      {
+        "id": 61,
+        "listing_id": 13,
+        "url": "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 62,
+        "listing_id": 13,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 63,
+        "listing_id": 13,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 64,
+        "listing_id": 13,
+        "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 65,
+        "listing_id": 13,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Free parking",
+      "Pool",
+      "Beach access",
+      "Garden",
+      "Balcony",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 14,
+    "host_id": 4,
+    "title": "Houseboat on the Alleppey backwaters in Varanasi",
+    "description": "Drift peacefully through Kerala's famous backwaters. Our traditional Kettuvallam features air-conditioned bedrooms and a private chef serving fresh local seafood.",
+    "property_type": "Amazing views",
+    "price_per_night": 2634.0,
+    "cleaning_fee": 2185.0,
+    "service_fee_pct": 0.14,
+    "city": "Varanasi",
+    "state": "UP",
+    "country": "India",
+    "address": "Assi Ghat, Varanasi, UP 221005",
+    "latitude": 25.275986336977837,
+    "longitude": 83.01902145523887,
+    "max_guests": 5,
+    "bedrooms": 2,
+    "beds": 4,
+    "bathrooms": 1.5,
+    "created_at": "2026-10-06T18:35:25.904853",
+    "updated_at": "2026-10-06T18:35:25.904859",
+    "photos": [
+      {
+        "id": 66,
+        "listing_id": 14,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 67,
+        "listing_id": 14,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 68,
+        "listing_id": 14,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 69,
+        "listing_id": 14,
+        "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 70,
+        "listing_id": 14,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Kitchen",
+      "Pool",
+      "Bonfire",
+      "Beach access",
+      "Garden",
+      "Balcony",
+      "Workspace"
+    ]
+  },
+  {
+    "id": 15,
+    "host_id": 1,
+    "title": "Tranquil tea estate bungalow in Bengaluru",
+    "description": "Step back in time in this colonial-era bungalow surrounded by rolling tea gardens. Includes a private chef, guided estate walks, and vintage teakwood furniture.",
+    "property_type": "Apartment",
+    "price_per_night": 2444.0,
+    "cleaning_fee": 456.0,
+    "service_fee_pct": 0.14,
+    "city": "Bengaluru",
+    "state": "KA",
+    "country": "India",
+    "address": "Indiranagar, Bengaluru, KA 560038",
+    "latitude": 12.96273610188859,
+    "longitude": 77.63818255034259,
+    "max_guests": 5,
+    "bedrooms": 1,
+    "beds": 3,
+    "bathrooms": 2.0,
+    "created_at": "2026-10-06T18:35:25.909119",
+    "updated_at": "2026-10-06T18:35:25.909126",
+    "photos": [
+      {
+        "id": 71,
+        "listing_id": 15,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 72,
+        "listing_id": 15,
+        "url": "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 73,
+        "listing_id": 15,
+        "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 74,
+        "listing_id": 15,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 75,
+        "listing_id": 15,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Power backup",
+      "Hot water (geyser)",
+      "Pool",
+      "Bonfire",
+      "Cook / caretaker on call",
+      "Garden",
+      "Balcony",
+      "Washing machine",
+      "Breakfast included",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 16,
+    "host_id": 4,
+    "title": "Tranquil tea estate bungalow in Jaisalmer",
+    "description": "Step back in time in this colonial-era bungalow surrounded by rolling tea gardens. Includes a private chef, guided estate walks, and vintage teakwood furniture.",
+    "property_type": "Treehouses",
+    "price_per_night": 3646.0,
+    "cleaning_fee": 1585.0,
+    "service_fee_pct": 0.14,
+    "city": "Jaisalmer",
+    "state": "RJ",
+    "country": "India",
+    "address": "Fort Road, Jaisalmer, RJ 345001",
+    "latitude": 26.922235499050622,
+    "longitude": 70.89328501262658,
+    "max_guests": 10,
+    "bedrooms": 3,
+    "beds": 6,
+    "bathrooms": 2.0,
+    "created_at": "2026-10-06T18:35:25.913590",
+    "updated_at": "2026-10-06T18:35:25.913596",
+    "photos": [
+      {
+        "id": 76,
+        "listing_id": 16,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 77,
+        "listing_id": 16,
+        "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 78,
+        "listing_id": 16,
+        "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 79,
+        "listing_id": 16,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 80,
+        "listing_id": 16,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Air conditioning",
+      "Power backup",
+      "Hot water (geyser)",
+      "Pool",
+      "Bonfire",
+      "Mountain view",
+      "Beach access",
+      "Cook / caretaker on call",
+      "Garden",
+      "Balcony",
+      "Workspace",
+      "Hot tub",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 17,
+    "host_id": 3,
+    "title": "Modern tiny home in Leh",
+    "description": "A sustainable, minimalist tiny home nestled in a lush mango orchard. Unplug and reconnect with nature without sacrificing modern comforts.",
+    "property_type": "Treehouses",
+    "price_per_night": 10118.0,
+    "cleaning_fee": 2393.0,
+    "service_fee_pct": 0.14,
+    "city": "Leh",
+    "state": "LA",
+    "country": "India",
+    "address": "Main Bazaar, Leh, LA 194101",
+    "latitude": 34.15152744743637,
+    "longitude": 77.59314723303314,
+    "max_guests": 5,
+    "bedrooms": 4,
+    "beds": 4,
+    "bathrooms": 1.5,
+    "created_at": "2026-10-06T18:35:25.918581",
+    "updated_at": "2026-10-06T18:35:25.918588",
+    "photos": [
+      {
+        "id": 81,
+        "listing_id": 17,
+        "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 82,
+        "listing_id": 17,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 83,
+        "listing_id": 17,
+        "url": "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 84,
+        "listing_id": 17,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 85,
+        "listing_id": 17,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Air conditioning",
+      "Power backup",
+      "Hot water (geyser)",
+      "Pool",
+      "Mountain view",
+      "Beach access",
+      "Garden",
+      "Balcony",
+      "TV",
+      "Washing machine",
+      "Breakfast included",
+      "Workspace",
+      "Hot tub",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 18,
+    "host_id": 2,
+    "title": "Cozy homestay in Bengaluru",
+    "description": "Experience true Indian hospitality in our family-run homestay. Enjoy home-cooked meals, insider tips on the city, and a warm, welcoming environment.",
+    "property_type": "Castles",
+    "price_per_night": 57077.0,
+    "cleaning_fee": 1936.0,
+    "service_fee_pct": 0.14,
+    "city": "Bengaluru",
+    "state": "KA",
+    "country": "India",
+    "address": "Indiranagar, Bengaluru, KA 560038",
+    "latitude": 12.968159377583138,
+    "longitude": 77.64704232044447,
+    "max_guests": 9,
+    "bedrooms": 4,
+    "beds": 6,
+    "bathrooms": 1.0,
+    "created_at": "2026-10-06T18:35:25.921723",
+    "updated_at": "2026-10-06T18:35:25.921729",
+    "photos": [
+      {
+        "id": 86,
+        "listing_id": 18,
+        "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 87,
+        "listing_id": 18,
+        "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 88,
+        "listing_id": 18,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 89,
+        "listing_id": 18,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 90,
+        "listing_id": 18,
+        "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Free parking",
+      "Pet friendly",
+      "Balcony",
+      "TV",
+      "Breakfast included"
+    ]
+  },
+  {
+    "id": 19,
+    "host_id": 3,
+    "title": "Riverside retreat with private ghat in Coorg",
+    "description": "Find inner peace in this serene property right on the banks of the sacred river. Start your day with yoga on your private ghat and end it with the evening aarti.",
+    "property_type": "Tropical",
+    "price_per_night": 14374.0,
+    "cleaning_fee": 2126.0,
+    "service_fee_pct": 0.14,
+    "city": "Coorg",
+    "state": "KA",
+    "country": "India",
+    "address": "Madikeri, Coorg, KA 571201",
+    "latitude": 12.44028832412933,
+    "longitude": 75.74794621768639,
+    "max_guests": 8,
+    "bedrooms": 4,
+    "beds": 4,
+    "bathrooms": 2.5,
+    "created_at": "2026-10-06T18:35:25.925577",
+    "updated_at": "2026-10-06T18:35:25.925583",
+    "photos": [
+      {
+        "id": 91,
+        "listing_id": 19,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 92,
+        "listing_id": 19,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 93,
+        "listing_id": 19,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 94,
+        "listing_id": 19,
+        "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 95,
+        "listing_id": 19,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Kitchen",
+      "Power backup",
+      "Hot water (geyser)",
+      "Pet friendly",
+      "Bonfire",
+      "Beach access",
+      "Garden",
+      "Balcony",
+      "Washing machine",
+      "Breakfast included",
+      "Hot tub",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 20,
+    "host_id": 2,
+    "title": "Deodar cabin with Himalayan views in Pondicherry",
+    "description": "Nestled amidst ancient Deodar trees, this cozy wooden cabin offers unobstructed views of the snow-capped Himalayan ranges. Perfect for a peaceful mountain retreat.",
+    "property_type": "Villas",
+    "price_per_night": 33102.0,
+    "cleaning_fee": 1176.0,
+    "service_fee_pct": 0.14,
+    "city": "Pondicherry",
+    "state": "PY",
+    "country": "India",
+    "address": "White Town, Pondicherry, PY 605001",
+    "latitude": 11.915469154028555,
+    "longitude": 79.82980397478667,
+    "max_guests": 11,
+    "bedrooms": 2,
+    "beds": 6,
+    "bathrooms": 3.0,
+    "created_at": "2026-10-06T18:35:25.928339",
+    "updated_at": "2026-10-06T18:35:25.928344",
+    "photos": [
+      {
+        "id": 96,
+        "listing_id": 20,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 97,
+        "listing_id": 20,
+        "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 98,
+        "listing_id": 20,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 99,
+        "listing_id": 20,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 100,
+        "listing_id": 20,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Kitchen",
+      "Pool",
+      "Mountain view",
+      "Cook / caretaker on call",
+      "Garden",
+      "Balcony",
+      "TV",
+      "Washing machine",
+      "Breakfast included",
+      "Workspace",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 21,
+    "host_id": 2,
+    "title": "Riverside retreat with private ghat in New Delhi",
+    "description": "Find inner peace in this serene property right on the banks of the sacred river. Start your day with yoga on your private ghat and end it with the evening aarti.",
+    "property_type": "Castles",
+    "price_per_night": 41996.0,
+    "cleaning_fee": 2289.0,
+    "service_fee_pct": 0.14,
+    "city": "New Delhi",
+    "state": "DL",
+    "country": "India",
+    "address": "Hauz Khas Village, New Delhi, DL 110016",
+    "latitude": 28.534660992797868,
+    "longitude": 77.18704518174793,
+    "max_guests": 3,
+    "bedrooms": 2,
+    "beds": 2,
+    "bathrooms": 2.5,
+    "created_at": "2026-10-06T18:35:25.931370",
+    "updated_at": "2026-10-06T18:35:25.931375",
+    "photos": [
+      {
+        "id": 101,
+        "listing_id": 21,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 102,
+        "listing_id": 21,
+        "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 103,
+        "listing_id": 21,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 104,
+        "listing_id": 21,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 105,
+        "listing_id": 21,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Hot water (geyser)",
+      "Mountain view",
+      "Garden",
+      "TV",
+      "Workspace",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 22,
+    "host_id": 2,
+    "title": "Luxury desert camp under the stars in South Goa",
+    "description": "Experience the magic of the Thar desert. Luxurious swiss tents with en-suite bathrooms, traditional folk performances, and camel safaris at sunset.",
+    "property_type": "Amazing views",
+    "price_per_night": 2823.0,
+    "cleaning_fee": 1166.0,
+    "service_fee_pct": 0.14,
+    "city": "South Goa",
+    "state": "GA",
+    "country": "India",
+    "address": "Colva Beach Road, South Goa, GA 403708",
+    "latitude": 15.27178797300066,
+    "longitude": 73.90700002192295,
+    "max_guests": 5,
+    "bedrooms": 2,
+    "beds": 3,
+    "bathrooms": 2.5,
+    "created_at": "2026-10-06T18:35:25.934338",
+    "updated_at": "2026-10-06T18:35:25.934344",
+    "photos": [
+      {
+        "id": 106,
+        "listing_id": 22,
+        "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 107,
+        "listing_id": 22,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 108,
+        "listing_id": 22,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 109,
+        "listing_id": 22,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 110,
+        "listing_id": 22,
+        "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Air conditioning",
+      "Free parking",
+      "Bonfire",
+      "Cook / caretaker on call",
+      "Balcony",
+      "Washing machine",
+      "Breakfast included",
+      "Hot tub"
+    ]
+  },
+  {
+    "id": 23,
+    "host_id": 2,
+    "title": "Beachfront villa 5 minutes from Anjuna in Bhopal",
+    "description": "Wake up to the sound of waves in this luxurious modern villa. Just a short walk from Goa's vibrant cafes and pristine beaches, with a private plunge pool.",
+    "property_type": "Cabins",
+    "price_per_night": 2833.0,
+    "cleaning_fee": 817.0,
+    "service_fee_pct": 0.14,
+    "city": "Bhopal",
+    "state": "MP",
+    "country": "India",
+    "address": "Shamla Hills, Bhopal, MP 462002",
+    "latitude": 23.248942442437844,
+    "longitude": 77.39717557784437,
+    "max_guests": 6,
+    "bedrooms": 2,
+    "beds": 5,
+    "bathrooms": 1.5,
+    "created_at": "2026-10-06T18:35:25.937845",
+    "updated_at": "2026-10-06T18:35:25.937852",
+    "photos": [
+      {
+        "id": 111,
+        "listing_id": 23,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 112,
+        "listing_id": 23,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 113,
+        "listing_id": 23,
+        "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 114,
+        "listing_id": 23,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 115,
+        "listing_id": 23,
+        "url": "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Kitchen",
+      "Power backup",
+      "Hot water (geyser)",
+      "Free parking",
+      "Pool",
+      "Bonfire",
+      "Mountain view",
+      "Cook / caretaker on call",
+      "Garden",
+      "TV",
+      "Workspace"
+    ]
+  },
+  {
+    "id": 24,
+    "host_id": 3,
+    "title": "Houseboat on the Alleppey backwaters in Pune",
+    "description": "Drift peacefully through Kerala's famous backwaters. Our traditional Kettuvallam features air-conditioned bedrooms and a private chef serving fresh local seafood.",
+    "property_type": "Treehouses",
+    "price_per_night": 4483.0,
+    "cleaning_fee": 2482.0,
+    "service_fee_pct": 0.14,
+    "city": "Pune",
+    "state": "MH",
+    "country": "India",
+    "address": "Koregaon Park, Pune, MH 411001",
+    "latitude": 18.53333512052939,
+    "longitude": 73.88872283504872,
+    "max_guests": 7,
+    "bedrooms": 1,
+    "beds": 5,
+    "bathrooms": 3.0,
+    "created_at": "2026-10-06T18:35:25.942261",
+    "updated_at": "2026-10-06T18:35:25.942268",
+    "photos": [
+      {
+        "id": 116,
+        "listing_id": 24,
+        "url": "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 117,
+        "listing_id": 24,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 118,
+        "listing_id": 24,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 119,
+        "listing_id": 24,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 120,
+        "listing_id": 24,
+        "url": "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Air conditioning",
+      "Power backup",
+      "Hot water (geyser)",
+      "Free parking",
+      "Pool",
+      "Pet friendly",
+      "Mountain view",
+      "Beach access",
+      "Cook / caretaker on call",
+      "Garden",
+      "Balcony",
+      "TV",
+      "Washing machine",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 25,
+    "host_id": 2,
+    "title": "Tranquil tea estate bungalow in Udaipur",
+    "description": "Step back in time in this colonial-era bungalow surrounded by rolling tea gardens. Includes a private chef, guided estate walks, and vintage teakwood furniture.",
+    "property_type": "Farms",
+    "price_per_night": 3919.0,
+    "cleaning_fee": 2203.0,
+    "service_fee_pct": 0.14,
+    "city": "Udaipur",
+    "state": "RJ",
+    "country": "India",
+    "address": "Lake Pichola, Udaipur, RJ 313001",
+    "latitude": 24.574093985787133,
+    "longitude": 73.68512753881781,
+    "max_guests": 4,
+    "bedrooms": 2,
+    "beds": 3,
+    "bathrooms": 2.0,
+    "created_at": "2026-10-06T18:35:25.947483",
+    "updated_at": "2026-10-06T18:35:25.947494",
+    "photos": [
+      {
+        "id": 121,
+        "listing_id": 25,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 122,
+        "listing_id": 25,
+        "url": "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 123,
+        "listing_id": 25,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 124,
+        "listing_id": 25,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 125,
+        "listing_id": 25,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Free parking",
+      "Pool",
+      "Beach access",
+      "Washing machine",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 26,
+    "host_id": 1,
+    "title": "Urban luxury apartment in Lonavala",
+    "description": "Stay in the heart of Mumbai's most happening neighborhood. This modern, fully-equipped apartment is walking distance to top restaurants, cafes, and the sea link.",
+    "property_type": "Houseboat",
+    "price_per_night": 10464.0,
+    "cleaning_fee": 1964.0,
+    "service_fee_pct": 0.14,
+    "city": "Lonavala",
+    "state": "MH",
+    "country": "India",
+    "address": "Bhushi Dam, Lonavala, MH 410401",
+    "latitude": 18.747643113873952,
+    "longitude": 73.4174265861393,
+    "max_guests": 2,
+    "bedrooms": 1,
+    "beds": 2,
+    "bathrooms": 2.5,
+    "created_at": "2026-10-06T18:35:25.952941",
+    "updated_at": "2026-10-06T18:35:25.952949",
+    "photos": [
+      {
+        "id": 126,
+        "listing_id": 26,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 127,
+        "listing_id": 26,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 128,
+        "listing_id": 26,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 129,
+        "listing_id": 26,
+        "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 130,
+        "listing_id": 26,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Air conditioning",
+      "Power backup",
+      "Hot water (geyser)",
+      "Free parking",
+      "Pool",
+      "Pet friendly",
+      "Mountain view",
+      "Beach access",
+      "Cook / caretaker on call",
+      "Balcony",
+      "TV",
+      "Washing machine",
+      "Hot tub",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 27,
+    "host_id": 3,
+    "title": "Luxury desert camp under the stars in Jodhpur",
+    "description": "Experience the magic of the Thar desert. Luxurious swiss tents with en-suite bathrooms, traditional folk performances, and camel safaris at sunset.",
+    "property_type": "Tiny homes",
+    "price_per_night": 4011.0,
+    "cleaning_fee": 1088.0,
+    "service_fee_pct": 0.14,
+    "city": "Jodhpur",
+    "state": "RJ",
+    "country": "India",
+    "address": "Clock Tower, Jodhpur, RJ 342001",
+    "latitude": 26.28812191776024,
+    "longitude": 73.03291524254557,
+    "max_guests": 3,
+    "bedrooms": 1,
+    "beds": 3,
+    "bathrooms": 1.5,
+    "created_at": "2026-10-06T18:35:25.958224",
+    "updated_at": "2026-10-06T18:35:25.958230",
+    "photos": [
+      {
+        "id": 131,
+        "listing_id": 27,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 132,
+        "listing_id": 27,
+        "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 133,
+        "listing_id": 27,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 134,
+        "listing_id": 27,
+        "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 135,
+        "listing_id": 27,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Kitchen",
+      "Power backup",
+      "Pool",
+      "Bonfire",
+      "Mountain view",
+      "Balcony",
+      "Washing machine",
+      "Breakfast included"
+    ]
+  },
+  {
+    "id": 28,
+    "host_id": 2,
+    "title": "Riverside retreat with private ghat in Alleppey",
+    "description": "Find inner peace in this serene property right on the banks of the sacred river. Start your day with yoga on your private ghat and end it with the evening aarti.",
+    "property_type": "Beachfront",
+    "price_per_night": 6494.0,
+    "cleaning_fee": 817.0,
+    "service_fee_pct": 0.14,
+    "city": "Alleppey",
+    "state": "KL",
+    "country": "India",
+    "address": "Finishing Point, Alleppey, KL 688013",
+    "latitude": 9.506314786204237,
+    "longitude": 76.35011168703166,
+    "max_guests": 2,
+    "bedrooms": 1,
+    "beds": 1,
+    "bathrooms": 1.0,
+    "created_at": "2026-10-06T18:35:25.965013",
+    "updated_at": "2026-10-06T18:35:25.965023",
+    "photos": [
+      {
+        "id": 136,
+        "listing_id": 28,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 137,
+        "listing_id": 28,
+        "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 138,
+        "listing_id": 28,
+        "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 139,
+        "listing_id": 28,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 140,
+        "listing_id": 28,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Mountain view",
+      "TV",
+      "Washing machine",
+      "Workspace",
+      "Hot tub"
+    ]
+  },
+  {
+    "id": 29,
+    "host_id": 4,
+    "title": "Houseboat on the Alleppey backwaters in Amritsar",
+    "description": "Drift peacefully through Kerala's famous backwaters. Our traditional Kettuvallam features air-conditioned bedrooms and a private chef serving fresh local seafood.",
+    "property_type": "Villas",
+    "price_per_night": 40227.0,
+    "cleaning_fee": 911.0,
+    "service_fee_pct": 0.14,
+    "city": "Amritsar",
+    "state": "PB",
+    "country": "India",
+    "address": "Golden Temple Road, Amritsar, PB 143001",
+    "latitude": 31.632445683051003,
+    "longitude": 74.89446502569432,
+    "max_guests": 2,
+    "bedrooms": 1,
+    "beds": 1,
+    "bathrooms": 1.0,
+    "created_at": "2026-10-06T18:35:25.969436",
+    "updated_at": "2026-10-06T18:35:25.969445",
+    "photos": [
+      {
+        "id": 141,
+        "listing_id": 29,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 142,
+        "listing_id": 29,
+        "url": "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 143,
+        "listing_id": 29,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 144,
+        "listing_id": 29,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 145,
+        "listing_id": 29,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Power backup",
+      "Hot water (geyser)",
+      "Pet friendly",
+      "Garden",
+      "Balcony",
+      "TV",
+      "Breakfast included",
+      "Workspace"
+    ]
+  },
+  {
+    "id": 30,
+    "host_id": 1,
+    "title": "Heritage haveli near the City Palace in Kochi",
+    "description": "Experience royal living in this beautifully restored 19th-century haveli. Enjoy authentic local cuisine and panoramic views of the city from our rooftop terrace.",
+    "property_type": "Apartment",
+    "price_per_night": 3202.0,
+    "cleaning_fee": 632.0,
+    "service_fee_pct": 0.14,
+    "city": "Kochi",
+    "state": "KL",
+    "country": "India",
+    "address": "Fort Kochi, Kochi, KL 682001",
+    "latitude": 9.949382283735236,
+    "longitude": 76.22525254193306,
+    "max_guests": 8,
+    "bedrooms": 2,
+    "beds": 6,
+    "bathrooms": 1.0,
+    "created_at": "2026-10-06T18:35:25.973970",
+    "updated_at": "2026-10-06T18:35:25.973979",
+    "photos": [
+      {
+        "id": 146,
+        "listing_id": 30,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 147,
+        "listing_id": 30,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 148,
+        "listing_id": 30,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 149,
+        "listing_id": 30,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 150,
+        "listing_id": 30,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Power backup",
+      "Mountain view",
+      "Balcony",
+      "TV",
+      "Washing machine",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 31,
+    "host_id": 3,
+    "title": "Beachfront villa 5 minutes from Anjuna in Darjeeling",
+    "description": "Wake up to the sound of waves in this luxurious modern villa. Just a short walk from Goa's vibrant cafes and pristine beaches, with a private plunge pool.",
+    "property_type": "Villas",
+    "price_per_night": 20964.0,
+    "cleaning_fee": 1220.0,
+    "service_fee_pct": 0.14,
+    "city": "Darjeeling",
+    "state": "WB",
+    "country": "India",
+    "address": "Chowrasta, Darjeeling, WB 734101",
+    "latitude": 27.0419053889361,
+    "longitude": 88.2790364578085,
+    "max_guests": 8,
+    "bedrooms": 1,
+    "beds": 4,
+    "bathrooms": 1.5,
+    "created_at": "2026-10-06T18:35:25.978332",
+    "updated_at": "2026-10-06T18:35:25.978337",
+    "photos": [
+      {
+        "id": 151,
+        "listing_id": 31,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 152,
+        "listing_id": 31,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 153,
+        "listing_id": 31,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 154,
+        "listing_id": 31,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 155,
+        "listing_id": 31,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Kitchen",
+      "Free parking",
+      "Mountain view",
+      "TV",
+      "Workspace",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 32,
+    "host_id": 4,
+    "title": "Riverside retreat with private ghat in Agra",
+    "description": "Find inner peace in this serene property right on the banks of the sacred river. Start your day with yoga on your private ghat and end it with the evening aarti.",
+    "property_type": "Farms",
+    "price_per_night": 9672.0,
+    "cleaning_fee": 1620.0,
+    "service_fee_pct": 0.14,
+    "city": "Agra",
+    "state": "UP",
+    "country": "India",
+    "address": "Taj Ganj, Agra, UP 282001",
+    "latitude": 27.180848545637836,
+    "longitude": 77.98913459569553,
+    "max_guests": 2,
+    "bedrooms": 1,
+    "beds": 1,
+    "bathrooms": 1.5,
+    "created_at": "2026-10-06T18:35:25.982061",
+    "updated_at": "2026-10-06T18:35:25.982067",
+    "photos": [
+      {
+        "id": 156,
+        "listing_id": 32,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 157,
+        "listing_id": 32,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 158,
+        "listing_id": 32,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 159,
+        "listing_id": 32,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 160,
+        "listing_id": 32,
+        "url": "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Kitchen",
+      "Air conditioning",
+      "Power backup",
+      "Hot water (geyser)",
+      "Pet friendly",
+      "Bonfire",
+      "Beach access",
+      "Cook / caretaker on call",
+      "Garden",
+      "Balcony",
+      "TV",
+      "Breakfast included",
+      "Hot tub",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 33,
+    "host_id": 3,
+    "title": "Modern tiny home in Kochi",
+    "description": "A sustainable, minimalist tiny home nestled in a lush mango orchard. Unplug and reconnect with nature without sacrificing modern comforts.",
+    "property_type": "Farms",
+    "price_per_night": 7760.0,
+    "cleaning_fee": 958.0,
+    "service_fee_pct": 0.14,
+    "city": "Kochi",
+    "state": "KL",
+    "country": "India",
+    "address": "Fort Kochi, Kochi, KL 682001",
+    "latitude": 9.95629214654316,
+    "longitude": 76.24604694695934,
+    "max_guests": 12,
+    "bedrooms": 1,
+    "beds": 6,
+    "bathrooms": 2.0,
+    "created_at": "2026-10-06T18:35:25.986756",
+    "updated_at": "2026-10-06T18:35:25.986762",
+    "photos": [
+      {
+        "id": 161,
+        "listing_id": 33,
+        "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 162,
+        "listing_id": 33,
+        "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 163,
+        "listing_id": 33,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 164,
+        "listing_id": 33,
+        "url": "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 165,
+        "listing_id": 33,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Kitchen",
+      "Air conditioning",
+      "Power backup",
+      "Hot water (geyser)",
+      "Free parking",
+      "Pool",
+      "Pet friendly",
+      "Bonfire",
+      "Mountain view",
+      "Garden",
+      "TV",
+      "Breakfast included",
+      "Workspace",
+      "Hot tub"
+    ]
+  },
+  {
+    "id": 34,
+    "host_id": 2,
+    "title": "Heritage haveli near the City Palace in Jodhpur",
+    "description": "Experience royal living in this beautifully restored 19th-century haveli. Enjoy authentic local cuisine and panoramic views of the city from our rooftop terrace.",
+    "property_type": "Tropical",
+    "price_per_night": 6375.0,
+    "cleaning_fee": 2094.0,
+    "service_fee_pct": 0.14,
+    "city": "Jodhpur",
+    "state": "RJ",
+    "country": "India",
+    "address": "Clock Tower, Jodhpur, RJ 342001",
+    "latitude": 26.310733864694313,
+    "longitude": 73.02258847187801,
+    "max_guests": 7,
+    "bedrooms": 2,
+    "beds": 5,
+    "bathrooms": 1.0,
+    "created_at": "2026-10-06T18:35:25.992298",
+    "updated_at": "2026-10-06T18:35:25.992306",
+    "photos": [
+      {
+        "id": 166,
+        "listing_id": 34,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 167,
+        "listing_id": 34,
+        "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 168,
+        "listing_id": 34,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 169,
+        "listing_id": 34,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 170,
+        "listing_id": 34,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Kitchen",
+      "Air conditioning",
+      "Power backup",
+      "Free parking",
+      "Pool",
+      "Pet friendly",
+      "Bonfire",
+      "Mountain view",
+      "Beach access",
+      "Cook / caretaker on call",
+      "Garden",
+      "Workspace",
+      "Hot tub",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 35,
+    "host_id": 2,
+    "title": "Luxury desert camp under the stars in Kolkata",
+    "description": "Experience the magic of the Thar desert. Luxurious swiss tents with en-suite bathrooms, traditional folk performances, and camel safaris at sunset.",
+    "property_type": "Tropical",
+    "price_per_night": 9483.0,
+    "cleaning_fee": 1080.0,
+    "service_fee_pct": 0.14,
+    "city": "Kolkata",
+    "state": "WB",
+    "country": "India",
+    "address": "Park Street, Kolkata, WB 700016",
+    "latitude": 22.568474725997262,
+    "longitude": 88.35272963566372,
+    "max_guests": 8,
+    "bedrooms": 2,
+    "beds": 5,
+    "bathrooms": 1.5,
+    "created_at": "2026-10-06T18:35:25.997157",
+    "updated_at": "2026-10-06T18:35:25.997163",
+    "photos": [
+      {
+        "id": 171,
+        "listing_id": 35,
+        "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 172,
+        "listing_id": 35,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 173,
+        "listing_id": 35,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 174,
+        "listing_id": 35,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 175,
+        "listing_id": 35,
+        "url": "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Bonfire",
+      "Beach access",
+      "Balcony",
+      "Breakfast included",
+      "Hot tub",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 36,
+    "host_id": 2,
+    "title": "Luxury desert camp under the stars in Mumbai",
+    "description": "Experience the magic of the Thar desert. Luxurious swiss tents with en-suite bathrooms, traditional folk performances, and camel safaris at sunset.",
+    "property_type": "Apartment",
+    "price_per_night": 5158.0,
+    "cleaning_fee": 1661.0,
+    "service_fee_pct": 0.14,
+    "city": "Mumbai",
+    "state": "MH",
+    "country": "India",
+    "address": "Bandra West, Mumbai, MH 400050",
+    "latitude": 19.06167669668283,
+    "longitude": 72.83123720251834,
+    "max_guests": 7,
+    "bedrooms": 4,
+    "beds": 5,
+    "bathrooms": 2.5,
+    "created_at": "2026-10-06T18:35:26.000756",
+    "updated_at": "2026-10-06T18:35:26.000763",
+    "photos": [
+      {
+        "id": 176,
+        "listing_id": 36,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 177,
+        "listing_id": 36,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 178,
+        "listing_id": 36,
+        "url": "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 179,
+        "listing_id": 36,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 180,
+        "listing_id": 36,
+        "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Free parking",
+      "Pool",
+      "Pet friendly",
+      "Cook / caretaker on call",
+      "Garden",
+      "Balcony",
+      "Breakfast included",
+      "Hot tub",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 37,
+    "host_id": 2,
+    "title": "Heritage haveli near the City Palace in South Goa",
+    "description": "Experience royal living in this beautifully restored 19th-century haveli. Enjoy authentic local cuisine and panoramic views of the city from our rooftop terrace.",
+    "property_type": "Tropical",
+    "price_per_night": 10229.0,
+    "cleaning_fee": 2103.0,
+    "service_fee_pct": 0.14,
+    "city": "South Goa",
+    "state": "GA",
+    "country": "India",
+    "address": "Colva Beach Road, South Goa, GA 403708",
+    "latitude": 15.25758846790968,
+    "longitude": 73.92991766710786,
+    "max_guests": 5,
+    "bedrooms": 3,
+    "beds": 5,
+    "bathrooms": 1.0,
+    "created_at": "2026-10-06T18:35:26.005158",
+    "updated_at": "2026-10-06T18:35:26.005166",
+    "photos": [
+      {
+        "id": 181,
+        "listing_id": 37,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 182,
+        "listing_id": 37,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 183,
+        "listing_id": 37,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 184,
+        "listing_id": 37,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 185,
+        "listing_id": 37,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Air conditioning",
+      "Hot water (geyser)",
+      "Free parking",
+      "Bonfire",
+      "Mountain view",
+      "Balcony",
+      "Washing machine"
+    ]
+  },
+  {
+    "id": 38,
+    "host_id": 4,
+    "title": "Riverside retreat with private ghat in Mumbai",
+    "description": "Find inner peace in this serene property right on the banks of the sacred river. Start your day with yoga on your private ghat and end it with the evening aarti.",
+    "property_type": "Houseboat",
+    "price_per_night": 7188.0,
+    "cleaning_fee": 2298.0,
+    "service_fee_pct": 0.14,
+    "city": "Mumbai",
+    "state": "MH",
+    "country": "India",
+    "address": "Bandra West, Mumbai, MH 400050",
+    "latitude": 19.07449532069594,
+    "longitude": 72.8109359639935,
+    "max_guests": 12,
+    "bedrooms": 6,
+    "beds": 6,
+    "bathrooms": 1.0,
+    "created_at": "2026-10-06T18:35:26.009446",
+    "updated_at": "2026-10-06T18:35:26.009453",
+    "photos": [
+      {
+        "id": 186,
+        "listing_id": 38,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 187,
+        "listing_id": 38,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 188,
+        "listing_id": 38,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 189,
+        "listing_id": 38,
+        "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 190,
+        "listing_id": 38,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Air conditioning",
+      "Power backup",
+      "Pet friendly",
+      "Mountain view",
+      "Beach access",
+      "Cook / caretaker on call",
+      "Garden",
+      "Balcony"
+    ]
+  },
+  {
+    "id": 39,
+    "host_id": 3,
+    "title": "Heritage haveli near the City Palace in Rishikesh",
+    "description": "Experience royal living in this beautifully restored 19th-century haveli. Enjoy authentic local cuisine and panoramic views of the city from our rooftop terrace.",
+    "property_type": "Cabins",
+    "price_per_night": 3419.0,
+    "cleaning_fee": 2064.0,
+    "service_fee_pct": 0.14,
+    "city": "Rishikesh",
+    "state": "UK",
+    "country": "India",
+    "address": "Tapovan, Rishikesh, UK 249192",
+    "latitude": 30.110522791827975,
+    "longitude": 78.32404665272595,
+    "max_guests": 5,
+    "bedrooms": 2,
+    "beds": 3,
+    "bathrooms": 3.0,
+    "created_at": "2026-10-06T18:35:26.012873",
+    "updated_at": "2026-10-06T18:35:26.012879",
+    "photos": [
+      {
+        "id": 191,
+        "listing_id": 39,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 192,
+        "listing_id": 39,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 193,
+        "listing_id": 39,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 194,
+        "listing_id": 39,
+        "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 195,
+        "listing_id": 39,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Air conditioning",
+      "Power backup",
+      "Free parking",
+      "Pet friendly",
+      "Mountain view",
+      "Beach access",
+      "Cook / caretaker on call",
+      "Garden",
+      "Balcony",
+      "TV",
+      "Washing machine",
+      "Breakfast included",
+      "Workspace",
+      "Hot tub",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 40,
+    "host_id": 2,
+    "title": "Riverside retreat with private ghat in Chennai",
+    "description": "Find inner peace in this serene property right on the banks of the sacred river. Start your day with yoga on your private ghat and end it with the evening aarti.",
+    "property_type": "Treehouses",
+    "price_per_night": 3710.0,
+    "cleaning_fee": 1525.0,
+    "service_fee_pct": 0.14,
+    "city": "Chennai",
+    "state": "TN",
+    "country": "India",
+    "address": "Besant Nagar, Chennai, TN 600090",
+    "latitude": 13.0057575480944,
+    "longitude": 80.26377235753844,
+    "max_guests": 8,
+    "bedrooms": 3,
+    "beds": 4,
+    "bathrooms": 2.0,
+    "created_at": "2026-10-06T18:35:26.017243",
+    "updated_at": "2026-10-06T18:35:26.017252",
+    "photos": [
+      {
+        "id": 196,
+        "listing_id": 40,
+        "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 197,
+        "listing_id": 40,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 198,
+        "listing_id": 40,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 199,
+        "listing_id": 40,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 200,
+        "listing_id": 40,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Power backup",
+      "Hot water (geyser)",
+      "Free parking",
+      "Pool",
+      "Mountain view",
+      "Beach access",
+      "Garden",
+      "Washing machine",
+      "Breakfast included",
+      "Workspace",
+      "Hot tub",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 41,
+    "host_id": 1,
+    "title": "Cozy homestay in Jaipur",
+    "description": "Experience true Indian hospitality in our family-run homestay. Enjoy home-cooked meals, insider tips on the city, and a warm, welcoming environment.",
+    "property_type": "Cabins",
+    "price_per_night": 10638.0,
+    "cleaning_fee": 1197.0,
+    "service_fee_pct": 0.14,
+    "city": "Jaipur",
+    "state": "RJ",
+    "country": "India",
+    "address": "C-Scheme, Jaipur, RJ 302001",
+    "latitude": 26.91786471512024,
+    "longitude": 75.79213564652521,
+    "max_guests": 5,
+    "bedrooms": 1,
+    "beds": 3,
+    "bathrooms": 1.5,
+    "created_at": "2026-10-06T18:35:26.021618",
+    "updated_at": "2026-10-06T18:35:26.021625",
+    "photos": [
+      {
+        "id": 201,
+        "listing_id": 41,
+        "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 202,
+        "listing_id": 41,
+        "url": "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 203,
+        "listing_id": 41,
+        "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 204,
+        "listing_id": 41,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 205,
+        "listing_id": 41,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Kitchen",
+      "Air conditioning",
+      "Power backup",
+      "Hot water (geyser)",
+      "Free parking",
+      "Pool",
+      "Pet friendly",
+      "Mountain view",
+      "Beach access",
+      "Cook / caretaker on call",
+      "Balcony",
+      "TV",
+      "Washing machine",
+      "Workspace",
+      "Hot tub"
+    ]
+  },
+  {
+    "id": 42,
+    "host_id": 2,
+    "title": "Urban luxury apartment in Alleppey",
+    "description": "Stay in the heart of Mumbai's most happening neighborhood. This modern, fully-equipped apartment is walking distance to top restaurants, cafes, and the sea link.",
+    "property_type": "Tropical",
+    "price_per_night": 6210.0,
+    "cleaning_fee": 771.0,
+    "service_fee_pct": 0.14,
+    "city": "Alleppey",
+    "state": "KL",
+    "country": "India",
+    "address": "Finishing Point, Alleppey, KL 688013",
+    "latitude": 9.499533255554107,
+    "longitude": 76.32301197443627,
+    "max_guests": 6,
+    "bedrooms": 3,
+    "beds": 4,
+    "bathrooms": 1.5,
+    "created_at": "2026-10-06T18:35:26.026034",
+    "updated_at": "2026-10-06T18:35:26.026043",
+    "photos": [
+      {
+        "id": 206,
+        "listing_id": 42,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 207,
+        "listing_id": 42,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 208,
+        "listing_id": 42,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 209,
+        "listing_id": 42,
+        "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 210,
+        "listing_id": 42,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Kitchen",
+      "Air conditioning",
+      "Hot water (geyser)",
+      "Free parking",
+      "Pool",
+      "Pet friendly",
+      "Bonfire",
+      "Mountain view",
+      "Beach access",
+      "Cook / caretaker on call",
+      "Garden",
+      "Balcony",
+      "Workspace",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 43,
+    "host_id": 3,
+    "title": "Cozy homestay in Manali",
+    "description": "Experience true Indian hospitality in our family-run homestay. Enjoy home-cooked meals, insider tips on the city, and a warm, welcoming environment.",
+    "property_type": "Cabins",
+    "price_per_night": 6126.0,
+    "cleaning_fee": 2201.0,
+    "service_fee_pct": 0.14,
+    "city": "Manali",
+    "state": "HP",
+    "country": "India",
+    "address": "Old Manali, Manali, HP 175131",
+    "latitude": 32.259575505537114,
+    "longitude": 77.18128760698117,
+    "max_guests": 11,
+    "bedrooms": 1,
+    "beds": 6,
+    "bathrooms": 2.5,
+    "created_at": "2026-10-06T18:35:26.030177",
+    "updated_at": "2026-10-06T18:35:26.030183",
+    "photos": [
+      {
+        "id": 211,
+        "listing_id": 43,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 212,
+        "listing_id": 43,
+        "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 213,
+        "listing_id": 43,
+        "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 214,
+        "listing_id": 43,
+        "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 215,
+        "listing_id": 43,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Kitchen",
+      "Hot water (geyser)",
+      "Mountain view",
+      "Washing machine",
+      "Workspace",
+      "Hot tub"
+    ]
+  },
+  {
+    "id": 44,
+    "host_id": 4,
+    "title": "Tranquil tea estate bungalow in Ooty",
+    "description": "Step back in time in this colonial-era bungalow surrounded by rolling tea gardens. Includes a private chef, guided estate walks, and vintage teakwood furniture.",
+    "property_type": "Tropical",
+    "price_per_night": 11622.0,
+    "cleaning_fee": 1999.0,
+    "service_fee_pct": 0.14,
+    "city": "Ooty",
+    "state": "TN",
+    "country": "India",
+    "address": "Botanical Garden Road, Ooty, TN 643001",
+    "latitude": 11.416196875899738,
+    "longitude": 76.70834772333184,
+    "max_guests": 7,
+    "bedrooms": 6,
+    "beds": 6,
+    "bathrooms": 3.0,
+    "created_at": "2026-10-06T18:35:26.033910",
+    "updated_at": "2026-10-06T18:35:26.033918",
+    "photos": [
+      {
+        "id": 216,
+        "listing_id": 44,
+        "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 217,
+        "listing_id": 44,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 218,
+        "listing_id": 44,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 219,
+        "listing_id": 44,
+        "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 220,
+        "listing_id": 44,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Kitchen",
+      "Power backup",
+      "Free parking",
+      "Pool",
+      "Pet friendly",
+      "Bonfire",
+      "Beach access",
+      "Cook / caretaker on call",
+      "Garden",
+      "TV",
+      "Hot tub"
+    ]
+  },
+  {
+    "id": 45,
+    "host_id": 1,
+    "title": "Beachfront villa 5 minutes from Anjuna in Hyderabad",
+    "description": "Wake up to the sound of waves in this luxurious modern villa. Just a short walk from Goa's vibrant cafes and pristine beaches, with a private plunge pool.",
+    "property_type": "Farms",
+    "price_per_night": 9950.0,
+    "cleaning_fee": 507.0,
+    "service_fee_pct": 0.14,
+    "city": "Hyderabad",
+    "state": "TG",
+    "country": "India",
+    "address": "Jubilee Hills, Hyderabad, TG 500033",
+    "latitude": 17.444071783618185,
+    "longitude": 78.39684275588657,
+    "max_guests": 2,
+    "bedrooms": 1,
+    "beds": 1,
+    "bathrooms": 1.5,
+    "created_at": "2026-10-06T18:35:26.037871",
+    "updated_at": "2026-10-06T18:35:26.037877",
+    "photos": [
+      {
+        "id": 221,
+        "listing_id": 45,
+        "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 222,
+        "listing_id": 45,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 223,
+        "listing_id": 45,
+        "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 224,
+        "listing_id": 45,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 225,
+        "listing_id": 45,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Air conditioning",
+      "Power backup",
+      "Hot water (geyser)",
+      "Free parking",
+      "Pool",
+      "Mountain view",
+      "Balcony",
+      "TV",
+      "Washing machine",
+      "Breakfast included",
+      "Workspace",
+      "Hot tub",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 46,
+    "host_id": 2,
+    "title": "Heritage haveli near the City Palace in Chennai",
+    "description": "Experience royal living in this beautifully restored 19th-century haveli. Enjoy authentic local cuisine and panoramic views of the city from our rooftop terrace.",
+    "property_type": "Cabins",
+    "price_per_night": 2743.0,
+    "cleaning_fee": 364.0,
+    "service_fee_pct": 0.14,
+    "city": "Chennai",
+    "state": "TN",
+    "country": "India",
+    "address": "Besant Nagar, Chennai, TN 600090",
+    "latitude": 12.987169848056247,
+    "longitude": 80.24889596071445,
+    "max_guests": 5,
+    "bedrooms": 1,
+    "beds": 3,
+    "bathrooms": 2.5,
+    "created_at": "2026-10-06T18:35:26.041425",
+    "updated_at": "2026-10-06T18:35:26.041431",
+    "photos": [
+      {
+        "id": 226,
+        "listing_id": 46,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 227,
+        "listing_id": 46,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 228,
+        "listing_id": 46,
+        "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 229,
+        "listing_id": 46,
+        "url": "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 230,
+        "listing_id": 46,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Kitchen",
+      "Air conditioning",
+      "Power backup",
+      "Hot water (geyser)",
+      "Pet friendly",
+      "Bonfire",
+      "Mountain view",
+      "Cook / caretaker on call",
+      "TV",
+      "Washing machine",
+      "Breakfast included",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 47,
+    "host_id": 1,
+    "title": "Modern tiny home in Agra",
+    "description": "A sustainable, minimalist tiny home nestled in a lush mango orchard. Unplug and reconnect with nature without sacrificing modern comforts.",
+    "property_type": "Castles",
+    "price_per_night": 42130.0,
+    "cleaning_fee": 630.0,
+    "service_fee_pct": 0.14,
+    "city": "Agra",
+    "state": "UP",
+    "country": "India",
+    "address": "Taj Ganj, Agra, UP 282001",
+    "latitude": 27.169584472789854,
+    "longitude": 77.99403335302641,
+    "max_guests": 6,
+    "bedrooms": 4,
+    "beds": 6,
+    "bathrooms": 1.5,
+    "created_at": "2026-10-06T18:35:26.045444",
+    "updated_at": "2026-10-06T18:35:26.045450",
+    "photos": [
+      {
+        "id": 231,
+        "listing_id": 47,
+        "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 232,
+        "listing_id": 47,
+        "url": "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 233,
+        "listing_id": 47,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 234,
+        "listing_id": 47,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 235,
+        "listing_id": 47,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Hot water (geyser)",
+      "Pet friendly",
+      "Bonfire",
+      "Mountain view",
+      "Beach access",
+      "Garden",
+      "Workspace",
+      "Hot tub",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 48,
+    "host_id": 2,
+    "title": "Riverside retreat with private ghat in Manali",
+    "description": "Find inner peace in this serene property right on the banks of the sacred river. Start your day with yoga on your private ghat and end it with the evening aarti.",
+    "property_type": "Houseboat",
+    "price_per_night": 9046.0,
+    "cleaning_fee": 1688.0,
+    "service_fee_pct": 0.14,
+    "city": "Manali",
+    "state": "HP",
+    "country": "India",
+    "address": "Old Manali, Manali, HP 175131",
+    "latitude": 32.256296768991206,
+    "longitude": 77.18514920737027,
+    "max_guests": 7,
+    "bedrooms": 2,
+    "beds": 4,
+    "bathrooms": 1.0,
+    "created_at": "2026-10-06T18:35:26.048752",
+    "updated_at": "2026-10-06T18:35:26.048758",
+    "photos": [
+      {
+        "id": 236,
+        "listing_id": 48,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 237,
+        "listing_id": 48,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 238,
+        "listing_id": 48,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 239,
+        "listing_id": 48,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 240,
+        "listing_id": 48,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Kitchen",
+      "Hot water (geyser)",
+      "Pet friendly",
+      "Bonfire",
+      "Beach access",
+      "Cook / caretaker on call",
+      "Garden",
+      "Balcony",
+      "Breakfast included",
+      "Hot tub"
+    ]
+  },
+  {
+    "id": 49,
+    "host_id": 1,
+    "title": "Riverside retreat with private ghat in Jaipur",
+    "description": "Find inner peace in this serene property right on the banks of the sacred river. Start your day with yoga on your private ghat and end it with the evening aarti.",
+    "property_type": "Amazing views",
+    "price_per_night": 11608.0,
+    "cleaning_fee": 800.0,
+    "service_fee_pct": 0.14,
+    "city": "Jaipur",
+    "state": "RJ",
+    "country": "India",
+    "address": "C-Scheme, Jaipur, RJ 302001",
+    "latitude": 26.90883234531689,
+    "longitude": 75.80224429488938,
+    "max_guests": 7,
+    "bedrooms": 5,
+    "beds": 5,
+    "bathrooms": 2.5,
+    "created_at": "2026-10-06T18:35:26.051798",
+    "updated_at": "2026-10-06T18:35:26.051804",
+    "photos": [
+      {
+        "id": 241,
+        "listing_id": 49,
+        "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 242,
+        "listing_id": 49,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 243,
+        "listing_id": 49,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 244,
+        "listing_id": 49,
+        "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 245,
+        "listing_id": 49,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Power backup",
+      "Pool",
+      "Mountain view",
+      "Cook / caretaker on call",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 50,
+    "host_id": 3,
+    "title": "Riverside retreat with private ghat in Leh",
+    "description": "Find inner peace in this serene property right on the banks of the sacred river. Start your day with yoga on your private ghat and end it with the evening aarti.",
+    "property_type": "Tiny homes",
+    "price_per_night": 2441.0,
+    "cleaning_fee": 2057.0,
+    "service_fee_pct": 0.14,
+    "city": "Leh",
+    "state": "LA",
+    "country": "India",
+    "address": "Main Bazaar, Leh, LA 194101",
+    "latitude": 34.16640620645313,
+    "longitude": 77.59608186408504,
+    "max_guests": 4,
+    "bedrooms": 3,
+    "beds": 3,
+    "bathrooms": 3.0,
+    "created_at": "2026-10-06T18:35:26.054744",
+    "updated_at": "2026-10-06T18:35:26.054750",
+    "photos": [
+      {
+        "id": 246,
+        "listing_id": 50,
+        "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 247,
+        "listing_id": 50,
+        "url": "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 248,
+        "listing_id": 50,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 249,
+        "listing_id": 50,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 250,
+        "listing_id": 50,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Air conditioning",
+      "Hot water (geyser)",
+      "Free parking",
+      "Pool",
+      "Bonfire",
+      "Beach access",
+      "Cook / caretaker on call",
+      "Garden",
+      "TV",
+      "Washing machine",
+      "Breakfast included",
+      "Workspace",
+      "Hot tub"
+    ]
+  },
+  {
+    "id": 51,
+    "host_id": 1,
+    "title": "Heritage haveli near the City Palace in Munnar",
+    "description": "Experience royal living in this beautifully restored 19th-century haveli. Enjoy authentic local cuisine and panoramic views of the city from our rooftop terrace.",
+    "property_type": "Amazing views",
+    "price_per_night": 14224.0,
+    "cleaning_fee": 2019.0,
+    "service_fee_pct": 0.14,
+    "city": "Munnar",
+    "state": "KL",
+    "country": "India",
+    "address": "Old Munnar, Munnar, KL 685612",
+    "latitude": 10.087045831626922,
+    "longitude": 77.0457963710338,
+    "max_guests": 8,
+    "bedrooms": 2,
+    "beds": 5,
+    "bathrooms": 2.0,
+    "created_at": "2026-10-06T18:35:26.058497",
+    "updated_at": "2026-10-06T18:35:26.058504",
+    "photos": [
+      {
+        "id": 251,
+        "listing_id": 51,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 252,
+        "listing_id": 51,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 253,
+        "listing_id": 51,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 254,
+        "listing_id": 51,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 255,
+        "listing_id": 51,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Kitchen",
+      "Air conditioning",
+      "Hot water (geyser)",
+      "Free parking",
+      "Mountain view",
+      "Beach access",
+      "Garden",
+      "Workspace",
+      "Hot tub"
+    ]
+  },
+  {
+    "id": 52,
+    "host_id": 4,
+    "title": "Luxury desert camp under the stars in Hyderabad",
+    "description": "Experience the magic of the Thar desert. Luxurious swiss tents with en-suite bathrooms, traditional folk performances, and camel safaris at sunset.",
+    "property_type": "Houseboat",
+    "price_per_night": 6475.0,
+    "cleaning_fee": 2060.0,
+    "service_fee_pct": 0.14,
+    "city": "Hyderabad",
+    "state": "TG",
+    "country": "India",
+    "address": "Jubilee Hills, Hyderabad, TG 500033",
+    "latitude": 17.417035590888037,
+    "longitude": 78.41422871571734,
+    "max_guests": 3,
+    "bedrooms": 1,
+    "beds": 2,
+    "bathrooms": 3.0,
+    "created_at": "2026-10-06T18:35:26.061767",
+    "updated_at": "2026-10-06T18:35:26.061773",
+    "photos": [
+      {
+        "id": 256,
+        "listing_id": 52,
+        "url": "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 257,
+        "listing_id": 52,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 258,
+        "listing_id": 52,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 259,
+        "listing_id": 52,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 260,
+        "listing_id": 52,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Kitchen",
+      "Air conditioning",
+      "Power backup",
+      "Hot water (geyser)",
+      "Pet friendly",
+      "Mountain view",
+      "Cook / caretaker on call",
+      "Garden",
+      "Balcony",
+      "Breakfast included",
+      "Hot tub"
+    ]
+  },
+  {
+    "id": 53,
+    "host_id": 4,
+    "title": "Luxury desert camp under the stars in Jaisalmer",
+    "description": "Experience the magic of the Thar desert. Luxurious swiss tents with en-suite bathrooms, traditional folk performances, and camel safaris at sunset.",
+    "property_type": "Cabins",
+    "price_per_night": 5378.0,
+    "cleaning_fee": 1242.0,
+    "service_fee_pct": 0.14,
+    "city": "Jaisalmer",
+    "state": "RJ",
+    "country": "India",
+    "address": "Fort Road, Jaisalmer, RJ 345001",
+    "latitude": 26.91571049386225,
+    "longitude": 70.92163416809679,
+    "max_guests": 4,
+    "bedrooms": 2,
+    "beds": 2,
+    "bathrooms": 2.0,
+    "created_at": "2026-10-06T18:35:26.064930",
+    "updated_at": "2026-10-06T18:35:26.064936",
+    "photos": [
+      {
+        "id": 261,
+        "listing_id": 53,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 262,
+        "listing_id": 53,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 263,
+        "listing_id": 53,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 264,
+        "listing_id": 53,
+        "url": "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 265,
+        "listing_id": 53,
+        "url": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Kitchen",
+      "Garden",
+      "Balcony",
+      "TV",
+      "Washing machine"
+    ]
+  },
+  {
+    "id": 54,
+    "host_id": 4,
+    "title": "Modern tiny home in Udaipur",
+    "description": "A sustainable, minimalist tiny home nestled in a lush mango orchard. Unplug and reconnect with nature without sacrificing modern comforts.",
+    "property_type": "Houseboat",
+    "price_per_night": 6743.0,
+    "cleaning_fee": 1630.0,
+    "service_fee_pct": 0.14,
+    "city": "Udaipur",
+    "state": "RJ",
+    "country": "India",
+    "address": "Lake Pichola, Udaipur, RJ 313001",
+    "latitude": 24.558174927223124,
+    "longitude": 73.69630457237307,
+    "max_guests": 2,
+    "bedrooms": 1,
+    "beds": 1,
+    "bathrooms": 2.5,
+    "created_at": "2026-10-06T18:35:26.068246",
+    "updated_at": "2026-10-06T18:35:26.068252",
+    "photos": [
+      {
+        "id": 266,
+        "listing_id": 54,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 267,
+        "listing_id": 54,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 268,
+        "listing_id": 54,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 269,
+        "listing_id": 54,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 270,
+        "listing_id": 54,
+        "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Kitchen",
+      "Air conditioning",
+      "Power backup",
+      "Pool",
+      "Pet friendly",
+      "Bonfire",
+      "Mountain view",
+      "Balcony",
+      "Washing machine",
+      "Hot tub"
+    ]
+  },
+  {
+    "id": 55,
+    "host_id": 1,
+    "title": "Deodar cabin with Himalayan views in Darjeeling",
+    "description": "Nestled amidst ancient Deodar trees, this cozy wooden cabin offers unobstructed views of the snow-capped Himalayan ranges. Perfect for a peaceful mountain retreat.",
+    "property_type": "Tiny homes",
+    "price_per_night": 5681.0,
+    "cleaning_fee": 2388.0,
+    "service_fee_pct": 0.14,
+    "city": "Darjeeling",
+    "state": "WB",
+    "country": "India",
+    "address": "Chowrasta, Darjeeling, WB 734101",
+    "latitude": 27.023756148250676,
+    "longitude": 88.27374912917297,
+    "max_guests": 10,
+    "bedrooms": 1,
+    "beds": 6,
+    "bathrooms": 2.0,
+    "created_at": "2026-10-06T18:35:26.071243",
+    "updated_at": "2026-10-06T18:35:26.071248",
+    "photos": [
+      {
+        "id": 271,
+        "listing_id": 55,
+        "url": "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 272,
+        "listing_id": 55,
+        "url": "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 273,
+        "listing_id": 55,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 274,
+        "listing_id": 55,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 275,
+        "listing_id": 55,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Kitchen",
+      "Air conditioning",
+      "Power backup",
+      "Hot water (geyser)",
+      "Pet friendly",
+      "Bonfire",
+      "Mountain view",
+      "Beach access",
+      "Cook / caretaker on call",
+      "Balcony",
+      "TV",
+      "Breakfast included",
+      "Workspace",
+      "Hot tub",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 56,
+    "host_id": 3,
+    "title": "Tranquil tea estate bungalow in Rishikesh",
+    "description": "Step back in time in this colonial-era bungalow surrounded by rolling tea gardens. Includes a private chef, guided estate walks, and vintage teakwood furniture.",
+    "property_type": "Houseboat",
+    "price_per_night": 4473.0,
+    "cleaning_fee": 2111.0,
+    "service_fee_pct": 0.14,
+    "city": "Rishikesh",
+    "state": "UK",
+    "country": "India",
+    "address": "Tapovan, Rishikesh, UK 249192",
+    "latitude": 30.129955404801017,
+    "longitude": 78.33465318716605,
+    "max_guests": 7,
+    "bedrooms": 1,
+    "beds": 4,
+    "bathrooms": 3.0,
+    "created_at": "2026-10-06T18:35:26.074205",
+    "updated_at": "2026-10-06T18:35:26.074211",
+    "photos": [
+      {
+        "id": 276,
+        "listing_id": 56,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 277,
+        "listing_id": 56,
+        "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 278,
+        "listing_id": 56,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 279,
+        "listing_id": 56,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 280,
+        "listing_id": 56,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Air conditioning",
+      "Mountain view",
+      "Cook / caretaker on call",
+      "TV",
+      "Breakfast included"
+    ]
+  },
+  {
+    "id": 57,
+    "host_id": 4,
+    "title": "Houseboat on the Alleppey backwaters in North Goa",
+    "description": "Drift peacefully through Kerala's famous backwaters. Our traditional Kettuvallam features air-conditioned bedrooms and a private chef serving fresh local seafood.",
+    "property_type": "Villas",
+    "price_per_night": 38324.0,
+    "cleaning_fee": 468.0,
+    "service_fee_pct": 0.14,
+    "city": "North Goa",
+    "state": "GA",
+    "country": "India",
+    "address": "Beach Road, North Goa, GA 403509",
+    "latitude": 15.591689348146037,
+    "longitude": 73.75039263670791,
+    "max_guests": 10,
+    "bedrooms": 5,
+    "beds": 5,
+    "bathrooms": 1.5,
+    "created_at": "2026-10-06T18:35:26.077272",
+    "updated_at": "2026-10-06T18:35:26.077278",
+    "photos": [
+      {
+        "id": 281,
+        "listing_id": 57,
+        "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 282,
+        "listing_id": 57,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 283,
+        "listing_id": 57,
+        "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 284,
+        "listing_id": 57,
+        "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 285,
+        "listing_id": 57,
+        "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Kitchen",
+      "Hot water (geyser)",
+      "Free parking",
+      "Pet friendly",
+      "Garden",
+      "Balcony",
+      "Washing machine",
+      "Breakfast included",
+      "Hot tub",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 58,
+    "host_id": 2,
+    "title": "Luxury desert camp under the stars in Coorg",
+    "description": "Experience the magic of the Thar desert. Luxurious swiss tents with en-suite bathrooms, traditional folk performances, and camel safaris at sunset.",
+    "property_type": "Tropical",
+    "price_per_night": 7962.0,
+    "cleaning_fee": 1974.0,
+    "service_fee_pct": 0.14,
+    "city": "Coorg",
+    "state": "KA",
+    "country": "India",
+    "address": "Madikeri, Coorg, KA 571201",
+    "latitude": 12.43537859154295,
+    "longitude": 75.74535590882239,
+    "max_guests": 6,
+    "bedrooms": 2,
+    "beds": 3,
+    "bathrooms": 1.0,
+    "created_at": "2026-10-06T18:35:26.080517",
+    "updated_at": "2026-10-06T18:35:26.080524",
+    "photos": [
+      {
+        "id": 286,
+        "listing_id": 58,
+        "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 287,
+        "listing_id": 58,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 288,
+        "listing_id": 58,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 289,
+        "listing_id": 58,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 290,
+        "listing_id": 58,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Kitchen",
+      "Air conditioning",
+      "Power backup",
+      "Hot water (geyser)",
+      "Free parking",
+      "Bonfire",
+      "Mountain view",
+      "Beach access",
+      "Cook / caretaker on call",
+      "Garden",
+      "Balcony",
+      "TV",
+      "Workspace",
+      "Hot tub",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 59,
+    "host_id": 1,
+    "title": "Deodar cabin with Himalayan views in Amritsar",
+    "description": "Nestled amidst ancient Deodar trees, this cozy wooden cabin offers unobstructed views of the snow-capped Himalayan ranges. Perfect for a peaceful mountain retreat.",
+    "property_type": "Castles",
+    "price_per_night": 30288.0,
+    "cleaning_fee": 1645.0,
+    "service_fee_pct": 0.14,
+    "city": "Amritsar",
+    "state": "PB",
+    "country": "India",
+    "address": "Golden Temple Road, Amritsar, PB 143001",
+    "latitude": 31.632527391352593,
+    "longitude": 74.88330465599978,
+    "max_guests": 10,
+    "bedrooms": 4,
+    "beds": 5,
+    "bathrooms": 3.0,
+    "created_at": "2026-10-06T18:35:26.083964",
+    "updated_at": "2026-10-06T18:35:26.083970",
+    "photos": [
+      {
+        "id": 291,
+        "listing_id": 59,
+        "url": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 292,
+        "listing_id": 59,
+        "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 293,
+        "listing_id": 59,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 294,
+        "listing_id": 59,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 295,
+        "listing_id": 59,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Hot water (geyser)",
+      "Cook / caretaker on call",
+      "Balcony",
+      "Breakfast included",
+      "Workspace"
+    ]
+  },
+  {
+    "id": 60,
+    "host_id": 2,
+    "title": "Deodar cabin with Himalayan views in Varanasi",
+    "description": "Nestled amidst ancient Deodar trees, this cozy wooden cabin offers unobstructed views of the snow-capped Himalayan ranges. Perfect for a peaceful mountain retreat.",
+    "property_type": "Treehouses",
+    "price_per_night": 3764.0,
+    "cleaning_fee": 1679.0,
+    "service_fee_pct": 0.14,
+    "city": "Varanasi",
+    "state": "UP",
+    "country": "India",
+    "address": "Assi Ghat, Varanasi, UP 221005",
+    "latitude": 25.29705571090171,
+    "longitude": 83.01092125861975,
+    "max_guests": 3,
+    "bedrooms": 1,
+    "beds": 3,
+    "bathrooms": 3.0,
+    "created_at": "2026-10-06T18:35:26.088381",
+    "updated_at": "2026-10-06T18:35:26.088389",
+    "photos": [
+      {
+        "id": 296,
+        "listing_id": 60,
+        "url": "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 297,
+        "listing_id": 60,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 298,
+        "listing_id": 60,
+        "url": "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 299,
+        "listing_id": 60,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 300,
+        "listing_id": 60,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Power backup",
+      "Hot water (geyser)",
+      "Free parking",
+      "Pool",
+      "Pet friendly",
+      "Beach access",
+      "TV",
+      "Breakfast included",
+      "Workspace",
+      "Hot tub"
+    ]
+  },
+  {
+    "id": 61,
+    "host_id": 2,
+    "title": "Riverside retreat with private ghat in Hyderabad",
+    "description": "Find inner peace in this serene property right on the banks of the sacred river. Start your day with yoga on your private ghat and end it with the evening aarti.",
+    "property_type": "Treehouses",
+    "price_per_night": 7570.0,
+    "cleaning_fee": 2104.0,
+    "service_fee_pct": 0.14,
+    "city": "Hyderabad",
+    "state": "TG",
+    "country": "India",
+    "address": "Jubilee Hills, Hyderabad, TG 500033",
+    "latitude": 17.43106719913764,
+    "longitude": 78.39837086930815,
+    "max_guests": 6,
+    "bedrooms": 2,
+    "beds": 4,
+    "bathrooms": 2.5,
+    "created_at": "2026-10-06T18:35:26.093116",
+    "updated_at": "2026-10-06T18:35:26.093123",
+    "photos": [
+      {
+        "id": 301,
+        "listing_id": 61,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 302,
+        "listing_id": 61,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 303,
+        "listing_id": 61,
+        "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 304,
+        "listing_id": 61,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 305,
+        "listing_id": 61,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Kitchen",
+      "Hot water (geyser)",
+      "Free parking",
+      "Pool",
+      "Pet friendly",
+      "Bonfire",
+      "Beach access",
+      "Balcony",
+      "Washing machine",
+      "Breakfast included",
+      "Workspace",
+      "Hot tub"
+    ]
+  },
+  {
+    "id": 62,
+    "host_id": 3,
+    "title": "Deodar cabin with Himalayan views in Bhopal",
+    "description": "Nestled amidst ancient Deodar trees, this cozy wooden cabin offers unobstructed views of the snow-capped Himalayan ranges. Perfect for a peaceful mountain retreat.",
+    "property_type": "Villas",
+    "price_per_night": 37446.0,
+    "cleaning_fee": 675.0,
+    "service_fee_pct": 0.14,
+    "city": "Bhopal",
+    "state": "MP",
+    "country": "India",
+    "address": "Shamla Hills, Bhopal, MP 462002",
+    "latitude": 23.267856530520472,
+    "longitude": 77.40148152027628,
+    "max_guests": 8,
+    "bedrooms": 2,
+    "beds": 5,
+    "bathrooms": 2.5,
+    "created_at": "2026-10-06T18:35:26.098010",
+    "updated_at": "2026-10-06T18:35:26.098017",
+    "photos": [
+      {
+        "id": 306,
+        "listing_id": 62,
+        "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 307,
+        "listing_id": 62,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 308,
+        "listing_id": 62,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 309,
+        "listing_id": 62,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 310,
+        "listing_id": 62,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Kitchen",
+      "Power backup",
+      "Free parking",
+      "Pool",
+      "Cook / caretaker on call",
+      "Garden",
+      "Balcony",
+      "TV",
+      "Workspace"
+    ]
+  },
+  {
+    "id": 63,
+    "host_id": 2,
+    "title": "Deodar cabin with Himalayan views in Shimla",
+    "description": "Nestled amidst ancient Deodar trees, this cozy wooden cabin offers unobstructed views of the snow-capped Himalayan ranges. Perfect for a peaceful mountain retreat.",
+    "property_type": "Tiny homes",
+    "price_per_night": 1813.0,
+    "cleaning_fee": 2221.0,
+    "service_fee_pct": 0.14,
+    "city": "Shimla",
+    "state": "HP",
+    "country": "India",
+    "address": "Mall Road, Shimla, HP 171001",
+    "latitude": 31.102744058959292,
+    "longitude": 77.15361004793222,
+    "max_guests": 4,
+    "bedrooms": 2,
+    "beds": 3,
+    "bathrooms": 1.0,
+    "created_at": "2026-10-06T18:35:26.102113",
+    "updated_at": "2026-10-06T18:35:26.102122",
+    "photos": [
+      {
+        "id": 311,
+        "listing_id": 63,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 312,
+        "listing_id": 63,
+        "url": "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 313,
+        "listing_id": 63,
+        "url": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 314,
+        "listing_id": 63,
+        "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 315,
+        "listing_id": 63,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Hot water (geyser)",
+      "Pool",
+      "Bonfire",
+      "Balcony",
+      "Breakfast included"
+    ]
+  },
+  {
+    "id": 64,
+    "host_id": 2,
+    "title": "Heritage haveli near the City Palace in Munnar",
+    "description": "Experience royal living in this beautifully restored 19th-century haveli. Enjoy authentic local cuisine and panoramic views of the city from our rooftop terrace.",
+    "property_type": "Villas",
+    "price_per_night": 35513.0,
+    "cleaning_fee": 557.0,
+    "service_fee_pct": 0.14,
+    "city": "Munnar",
+    "state": "KL",
+    "country": "India",
+    "address": "Old Munnar, Munnar, KL 685612",
+    "latitude": 10.073334315811602,
+    "longitude": 77.07570587542648,
+    "max_guests": 9,
+    "bedrooms": 5,
+    "beds": 6,
+    "bathrooms": 3.0,
+    "created_at": "2026-10-06T18:35:26.105552",
+    "updated_at": "2026-10-06T18:35:26.105558",
+    "photos": [
+      {
+        "id": 316,
+        "listing_id": 64,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 317,
+        "listing_id": 64,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 318,
+        "listing_id": 64,
+        "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 319,
+        "listing_id": 64,
+        "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 320,
+        "listing_id": 64,
+        "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Wifi",
+      "Air conditioning",
+      "Power backup",
+      "Hot water (geyser)",
+      "Free parking",
+      "Pool",
+      "Pet friendly",
+      "Mountain view",
+      "Garden",
+      "TV",
+      "Washing machine",
+      "Breakfast included",
+      "EV charger"
+    ]
+  },
+  {
+    "id": 65,
+    "host_id": 1,
+    "title": "Riverside retreat with private ghat in Pondicherry",
+    "description": "Find inner peace in this serene property right on the banks of the sacred river. Start your day with yoga on your private ghat and end it with the evening aarti.",
+    "property_type": "Cabins",
+    "price_per_night": 8897.0,
+    "cleaning_fee": 1829.0,
+    "service_fee_pct": 0.14,
+    "city": "Pondicherry",
+    "state": "PY",
+    "country": "India",
+    "address": "White Town, Pondicherry, PY 605001",
+    "latitude": 11.923046010442768,
+    "longitude": 79.81414968924436,
+    "max_guests": 7,
+    "bedrooms": 1,
+    "beds": 4,
+    "bathrooms": 1.0,
+    "created_at": "2026-10-06T18:35:26.109030",
+    "updated_at": "2026-10-06T18:35:26.109037",
+    "photos": [
+      {
+        "id": 321,
+        "listing_id": 65,
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        "position": 0
+      },
+      {
+        "id": 322,
+        "listing_id": 65,
+        "url": "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=1200&q=80",
+        "position": 1
+      },
+      {
+        "id": 323,
+        "listing_id": 65,
+        "url": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "position": 2
+      },
+      {
+        "id": 324,
+        "listing_id": 65,
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "position": 3
+      },
+      {
+        "id": 325,
+        "listing_id": 65,
+        "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "position": 4
+      }
+    ],
+    "amenities": [
+      "Kitchen",
+      "Air conditioning",
+      "Power backup",
+      "Hot water (geyser)",
+      "Free parking",
+      "Pet friendly",
+      "Bonfire",
+      "Beach access",
+      "TV",
+      "Workspace"
+    ]
+  }
+]

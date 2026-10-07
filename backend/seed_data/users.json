@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Sharma",
+    "email": "aarav@example.com",
+    "avatar_url": "https://i.pravatar.cc/150?img=1",
+    "is_host": true,
+    "created_at": "2026-10-06T18:35:25.830866",
+    "bio": "Hi, I'm Aarav! I love travelling, good food, and meeting people.",
+    "joined_at": "2023-01-17"
+  },
+  {
+    "id": 2,
+    "name": "Priya Patel",
+    "email": "priya@example.com",
+    "avatar_url": "https://i.pravatar.cc/150?img=2",
+    "is_host": true,
+    "created_at": "2026-10-06T18:35:25.830874",
+    "bio": "Hi, I'm Priya! I love travelling, good food, and meeting people.",
+    "joined_at": "2026-01-02"
+  },
+  {
+    "id": 3,
+    "name": "Rohan Desai",
+    "email": "rohan@example.com",
+    "avatar_url": "https://i.pravatar.cc/150?img=3",
+    "is_host": true,
+    "created_at": "2026-10-06T18:35:25.830877",
+    "bio": "Hi, I'm Rohan! I love travelling, good food, and meeting people.",
+    "joined_at": "2026-06-28"
+  },
+  {
+    "id": 4,
+    "name": "Ananya Singh",
+    "email": "ananya@example.com",
+    "avatar_url": "https://i.pravatar.cc/150?img=4",
+    "is_host": true,
+    "created_at": "2026-10-06T18:35:25.830879",
+    "bio": "Hi, I'm Ananya! I love travelling, good food, and meeting people.",
+    "joined_at": "2025-02-01"
+  },
+  {
+    "id": 5,
+    "name": "Vikram Reddy",
+    "email": "vikram@example.com",
+    "avatar_url": "https://i.pravatar.cc/150?img=5",
+    "is_host": false,
+    "created_at": "2026-10-06T18:35:25.830882",
+    "bio": "Hi, I'm Vikram! I love travelling, good food, and meeting people.",
+    "joined_at": "2025-04-04"
+  },
+  {
+    "id": 6,
+    "name": "Neha Gupta",
+    "email": "neha@example.com",
+    "avatar_url": "https://i.pravatar.cc/150?img=6",
+    "is_host": false,
+    "created_at": "2026-10-06T18:35:25.830884",
+    "bio": "Hi, I'm Neha! I love travelling, good food, and meeting people.",
+    "joined_at": "2025-05-18"
+  },
+  {
+    "id": 7,
+    "name": "Arjun Kapoor",
+    "email": "arjun@example.com",
+    "avatar_url": "https://i.pravatar.cc/150?img=7",
+    "is_host": false,
+    "created_at": "2026-10-06T18:35:25.830886",
+    "bio": "Hi, I'm Arjun! I love travelling, good food, and meeting people.",
+    "joined_at": "2025-11-06"
+  },
+  {
+    "id": 8,
+    "name": "Kavya Joshi",
+    "email": "kavya@example.com",
+    "avatar_url": "https://i.pravatar.cc/150?img=8",
+    "is_host": false,
+    "created_at": "2026-10-06T18:35:25.830888",
+    "bio": "Hi, I'm Kavya! I love travelling, good food, and meeting people.",
+    "joined_at": "2026-01-21"
+  }
+]

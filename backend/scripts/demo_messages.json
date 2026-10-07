@@ -1,0 +1,19 @@
+[
+    [
+        {"role": "guest", "body": "Hi! We are arriving tomorrow around 10 AM. Is it possible to get an early check-in? We're taking the overnight train to Goa."},
+        {"role": "host", "body": "Namaste! Early check-in is subject to availability, but I've asked the caretaker, Raju, to keep your bags safe if the room isn't ready. He'll be there to welcome you."},
+        {"role": "guest", "body": "That sounds perfect, thanks. Can you share Raju's number?"},
+        {"role": "host", "body": "Sure, it's +91-9876543210. Call him once you reach the station."}
+    ],
+    [
+        {"role": "guest", "body": "Hello! I saw the pictures of the kitchen. Is there a microwave and basic utensils? We're travelling with a toddler."},
+        {"role": "host", "body": "Yes, absolutely. The kitchen is fully equipped with a microwave, gas stove, and basic utensils. There's also a grocery store right outside the society gate."},
+        {"role": "guest", "body": "Great, thanks! Just one more thing - how's the internet speed? My husband might have some zoom calls."},
+        {"role": "host", "body": "We have a 100 Mbps JioFiber connection. It's very stable and works perfectly for zoom calls!"}
+    ],
+    [
+        {"role": "guest", "body": "Hi, we are very excited about our stay! Could you suggest some good places for authentic South Indian food nearby?"},
+        {"role": "host", "body": "Hello! You must try 'MTR' for breakfast, it's just a 10-minute walk. For lunch, there's a fantastic Andhra meals place called Nagarjuna nearby."},
+        {"role": "guest", "body": "Noted! Can't wait."}
+    ]
+]

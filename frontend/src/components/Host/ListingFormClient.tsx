@@ -24,7 +24,7 @@ const listingSchema = z.object({
   state: z.string().min(2, "Required"),
   country: z.string().min(2, "Required"),
   address: z.string().min(5, "Required"),
-  price_per_night: z.number().min(10, "Minimum $10"),
+  price_per_night: z.number().min(10, "Minimum ₹10"),
   cleaning_fee: z.number().min(0),
   max_guests: z.number().min(1).max(16),
   bedrooms: z.number().min(1),
@@ -220,12 +220,12 @@ export default function ListingFormClient({ initialData }: { initialData?: any }
 
             <div className="grid grid-cols-2 gap-8">
               <div>
-                <label className="font-semibold block mb-2">Price per night ($)</label>
+                <label className="font-semibold block mb-2">Price per night (₹)</label>
                 <input type="number" {...register("price_per_night", { valueAsNumber: true })} className={inputClass} />
                 {errors.price_per_night && <p className={errClass}>{errors.price_per_night.message}</p>}
               </div>
               <div>
-                <label className="font-semibold block mb-2">Cleaning fee ($)</label>
+                <label className="font-semibold block mb-2">Cleaning fee (₹)</label>
                 <input type="number" {...register("cleaning_fee", { valueAsNumber: true })} className={inputClass} />
                 {errors.cleaning_fee && <p className={errClass}>{errors.cleaning_fee.message}</p>}
               </div>

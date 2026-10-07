@@ -5,6 +5,7 @@ import { apiFetch } from "@/lib/api";
 import { Button, Skeleton } from "@/components/UI";
 import { ChevronLeft, Star, CreditCard } from "lucide-react";
 import toast from "react-hot-toast";
+import { formatINR, formatDateShort } from "@/lib/format";
 
 export default function BookClient({ id }: { id: string }) {
   const router = useRouter();
@@ -93,7 +94,7 @@ export default function BookClient({ id }: { id: string }) {
             <div className="flex justify-between items-start mb-4">
               <div>
                 <div className="font-semibold">Dates</div>
-                <div>{new Date(check_in as string).toLocaleDateString()} - {new Date(check_out as string).toLocaleDateString()}</div>
+                <div>{formatDateShort(check_in as string)} - {formatDateShort(check_out as string)}</div>
               </div>
               <button onClick={() => router.back()} className="font-semibold underline">Edit</button>
             </div>
@@ -163,21 +164,21 @@ export default function BookClient({ id }: { id: string }) {
             <h2 className="text-xl font-bold mb-4">Price details</h2>
             <div className="flex flex-col gap-3 text-neutral-700">
               <div className="flex justify-between">
-                <span>${listing.price_per_night} x {quote.nights} nights</span>
-                <span>${quote.subtotal}</span>
+                <span>{formatINR(listing.price_per_night)} x {quote.nights} nights</span>
+                <span>{formatINR(quote.subtotal)}</span>
               </div>
               <div className="flex justify-between">
                 <span className="underline">Cleaning fee</span>
-                <span>${quote.cleaning_fee}</span>
+                <span>{formatINR(quote.cleaning_fee)}</span>
               </div>
               <div className="flex justify-between">
                 <span className="underline">Airbnb service fee</span>
-                <span>${quote.service_fee}</span>
+                <span>{formatINR(quote.service_fee)}</span>
               </div>
               <hr className="my-2 border-neutral-200" />
               <div className="flex justify-between font-bold text-black text-lg">
-                <span>Total (USD)</span>
-                <span>${quote.total}</span>
+                <span>Total (INR)</span>
+                <span>{formatINR(quote.total)}</span>
               </div>
             </div>
           </div>

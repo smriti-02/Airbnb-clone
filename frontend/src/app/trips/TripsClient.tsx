@@ -6,6 +6,10 @@ import { useUser } from "@/contexts/UserContext";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import { Star } from "lucide-react";
+import SafeImage from "@/components/SafeImage";
+import { formatINR, formatDateShort, formatDateKey } from "@/lib/format";
+import WishlistButton from "@/components/WishlistButton";
+import MessageHostButton from "@/components/Shared/MessageHostButton";
 
 export default function TripsClient() {
   const { user } = useUser();
@@ -73,7 +77,7 @@ export default function TripsClient() {
 
   if (!user || loading) return <div className="max-w-[1120px] mx-auto p-10"><Skeleton className="h-64 w-full" /></div>;
 
-  const today = new Date().toISOString().split('T')[0];
+  const today = formatDateKey(new Date());
   
   const upcoming = bookings.filter(b => b.status === "confirmed" && b.check_out >= today);
   const past = bookings.filter(b => b.status === "confirmed" && b.check_out < today);
@@ -104,26 +108,40 @@ export default function TripsClient() {
           {activeList.map(b => (
             <div key={b.id} className="border border-neutral-200 rounded-2xl overflow-hidden shadow-sm flex flex-col">
               <div 
-                className="h-48 w-full bg-cover bg-center cursor-pointer hover:opacity-90 transition" 
-                style={{ backgroundImage: `url(${b.listing?.photos?.[0]?.url})` }}
+                className="relative h-48 w-full cursor-pointer hover:opacity-90 transition" 
                 onClick={() => router.push(`/listings/${b.listing_id}`)}
-              />
+              >
+                <SafeImage src={b.listing?.photos?.[0]?.url} alt={b.listing?.title} fill />
+                <div className="absolute top-3 right-3 z-10">
+                  <WishlistButton listingId={b.listing_id} size={26} />
+                </div>
+              </div>
               <div className="p-5 flex-1 flex flex-col justify-between">
                 <div>
                   <div className="text-xs text-neutral-500 font-bold uppercase mb-1">{b.listing?.city}, {b.listing?.country}</div>
                   <div className="font-semibold text-lg line-clamp-1 mb-1">{b.listing?.title}</div>
                   <div className="text-neutral-600 text-sm mb-4">
-                    {new Date(b.check_in).toLocaleDateString()} - {new Date(b.check_out).toLocaleDateString()} · {b.guests} guest{b.guests>1?'s':''}
+                    {formatDateShort(b.check_in)} - {formatDateShort(b.check_out)} · {b.guests} guest{b.guests>1?'s':''}
                   </div>
-                  <div className="font-bold">Total: ${b.total}</div>
+                  <div className="font-bold">Total: {formatINR(b.total)}</div>
                 </div>
                 
                 <div className="mt-6">
                   {tab === "upcoming" && (
-                    <Button className="w-full text-red-600 border-red-200 hover:bg-red-50" onClick={() => setCancelModal(b.id)}>Cancel reservation</Button>
+                    <div className="flex flex-col gap-2">
+                      <Button className="w-full text-red-600 border-red-200 hover:bg-red-50" onClick={() => setCancelModal(b.id)}>Cancel reservation</Button>
+                      {b.listing?.host && (
+                        <MessageHostButton listingId={b.listing_id} hostId={b.listing.host.id} hostName={b.listing.host.name} />
+                      )}
+                    </div>
                   )}
                   {tab === "past" && (
-                    <Button primary className="w-full" onClick={() => setReviewModal(b.id)}>Leave a review</Button>
+                    <div className="flex flex-col gap-2">
+                      <Button primary className="w-full" onClick={() => setReviewModal(b.id)}>Leave a review</Button>
+                      {b.listing?.host && (
+                        <MessageHostButton listingId={b.listing_id} hostId={b.listing.host.id} hostName={b.listing.host.name} />
+                      )}
+                    </div>
                   )}
                   {tab === "cancelled" && (
                     <div className="text-sm font-semibold text-red-500 bg-red-50 p-3 rounded-lg text-center">Cancelled</div>

@@ -1,14 +1,7 @@
 from fastapi import Header, Depends, HTTPException
 from sqlalchemy.orm import Session
-from database import SessionLocal
+from database import SessionLocal, get_db
 from models.models import User
-
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
 
 def get_current_user(x_user_id: int = Header(..., description="User ID (mock auth)"), db: Session = Depends(get_db)) -> User:
     user = db.query(User).filter(User.id == x_user_id).first()

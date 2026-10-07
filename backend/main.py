@@ -1,9 +1,27 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from routers import listings, bookings, host, misc
+from routers import listings, bookings, host, misc, locations, auth, messages
 
-app = FastAPI(title="Airbnb Clone API")
+from contextlib import asynccontextmanager
+from fastapi.staticfiles import StaticFiles
+import os
+import seed
+import migrations
+from database import engine
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Ensure uploads directory exists
+    os.makedirs(os.path.join(os.path.dirname(__file__), "uploads", "listings"), exist_ok=True)
+    try:
+        migrations.apply_lightweight_migrations(engine)
+        seed.main(reset=False)
+    except Exception as e:
+        print(f"Startup failed: {e}")
+    yield
+
+app = FastAPI(title="Airbnb Clone API", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
@@ -13,10 +31,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
+
 app.include_router(listings.router)
 app.include_router(bookings.router)
 app.include_router(host.router)
 app.include_router(misc.router)
+app.include_router(locations.router)
+app.include_router(auth.router)
+app.include_router(messages.router)
 
 @app.get("/")
 def read_root():

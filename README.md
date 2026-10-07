@@ -2,7 +2,11 @@
 
 <h1 align="center">Airbnb Clone</h1>
 
-<video src="https://github.com/smriti-02/Airbnb-clone/raw/main/backend/docs/brag-v2.mp4" controls width="100%"></video>
+
+
+https://github.com/user-attachments/assets/a439f72f-9597-4f1c-b091-e1678359cb85
+
+
 
 
 <p align="center">

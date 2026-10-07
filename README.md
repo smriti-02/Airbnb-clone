@@ -4,15 +4,13 @@
 
 
 
-https://github.com/user-attachments/assets/a439f72f-9597-4f1c-b091-e1678359cb85
-
-
-
 
 <p align="center">
   A full-stack Airbnb-style marketplace with a guest side (search, listing pages, booking) and a host side
   (listing wizard, calendar, reservations, messaging).
 </p>
+
+https://github.com/user-attachments/assets/db52e4c5-7eb2-487a-906e-a7460b0f4b66
 
 <p align="center">
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white">

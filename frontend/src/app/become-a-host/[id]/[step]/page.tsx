@@ -170,6 +170,28 @@ export default function WizardShell() {
     // In background, autosave certain fields if needed? No, wait for Next.
   };
 
+  const handleAutofill = () => {
+    updateDraft({
+      property_type: "Villa",
+      place_type: "entire",
+      country: "India",
+      address: "123 Palm Grove, Baga 403516",
+      city: "Goa",
+      state: "Goa",
+      max_guests: 6,
+      bedrooms: 3,
+      beds: 3,
+      bathrooms: 2,
+      amenities: [{"id":1},{"id":2},{"id":3},{"id":5},{"id":7}] as any,
+      title: "Luxury Palm Villa in Baga",
+      description: "Welcome to our beautiful luxury villa, perfectly situated just 5 minutes from Baga beach. Enjoy the private pool and lush gardens.",
+      price_per_night: 8500,
+      cleaning_fee: 1200,
+      instant_book: true
+    });
+    toast.success("Demo data filled!");
+  };
+
   const renderContent = () => {
     if (currentStepDef.intro) {
       const titles = {
@@ -238,6 +260,12 @@ export default function WizardShell() {
           </svg>
         </Link>
         <div className="flex gap-4">
+          <button 
+            onClick={handleAutofill}
+            className="font-semibold text-sm hover:bg-gray-100 rounded-full px-4 py-2 transition text-blue-600"
+          >
+            Autofill Demo
+          </button>
           <button className="font-semibold text-sm hover:bg-gray-100 rounded-full px-4 py-2 transition">
             Questions?
           </button>

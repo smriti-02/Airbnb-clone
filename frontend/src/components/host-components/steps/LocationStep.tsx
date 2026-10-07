@@ -59,8 +59,9 @@ export default function LocationStep({ value, onChange }: { value: HostListingDr
             className="flex-1 border border-gray-300 rounded-lg p-4 outline-none focus:border-black focus:ring-1 focus:ring-black"
             value={value.address?.match(/\b\d{6}\b/)?.[0] || ""} // simple mock or separate field? 
             onChange={(e) => {
-              // The prompt says pincode. We can just append it to address for simplicity if no separate field exists
-              // Or keep it simple since HostListingDraft doesn't have a pincode field.
+              const newPin = e.target.value;
+              const addrWithoutPin = (value.address || "").replace(/\s*\b\d{6}\b/, "");
+              onChange({ address: `${addrWithoutPin} ${newPin}`.trim() });
             }}
           />
         </div>

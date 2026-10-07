@@ -30,7 +30,15 @@ export async function apiFetch<T>(endpoint: string, options: RequestInit = {}): 
     let errorMsg = "An error occurred";
     try {
       const errorData = await response.json();
-      errorMsg = errorData.detail || errorMsg;
+      if (errorData.detail) {
+        if (typeof errorData.detail === 'string') {
+          errorMsg = errorData.detail;
+        } else if (errorData.detail.missing) {
+          errorMsg = "Missing: " + errorData.detail.missing.join(", ");
+        } else {
+          errorMsg = JSON.stringify(errorData.detail);
+        }
+      }
     } catch (e) {}
     throw new Error(errorMsg);
   }

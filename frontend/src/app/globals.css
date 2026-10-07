@@ -19,9 +19,19 @@
 @layer base {
   html, body {
     @apply m-0 p-0 text-[color:var(--color-airbnb-text)] bg-[color:var(--color-airbnb-bg)] antialiased font-sans;
+    overflow-anchor: none;
   }
   
   * {
     @apply border-[color:var(--color-airbnb-border)];
+  }
+}
+
+@layer utilities {
+  .search-ease {
+    transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+  }
+  .panel-contain {
+    contain: layout paint;
   }
 }

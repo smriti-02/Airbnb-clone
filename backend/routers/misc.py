@@ -5,6 +5,7 @@ from dependencies import get_db, get_current_user
 from schemas.schemas import ReviewCreate, ReviewSchema, AmenitySchema, UserSchema, ListingSchema
 from models.models import User, Amenity, Review, Booking, Wishlist, Listing
 from datetime import date
+from utils import published_listings
 
 router = APIRouter(prefix="/api", tags=["misc"])
 
@@ -18,7 +19,7 @@ def get_users(db: Session = Depends(get_db)):
 
 @router.get("/wishlist", response_model=List[ListingSchema])
 def my_wishlist(db: Session = Depends(get_db), user: User = Depends(get_current_user)):
-    return db.query(Listing).join(Wishlist).filter(Wishlist.user_id == user.id).all()
+    return published_listings(db.query(Listing)).join(Wishlist).filter(Wishlist.user_id == user.id).all()
 
 @router.post("/wishlist/{listing_id}")
 def add_wishlist(listing_id: int, db: Session = Depends(get_db), user: User = Depends(get_current_user)):

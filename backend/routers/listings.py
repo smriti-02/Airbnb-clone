@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, Query, HTTPException
+from fastapi import APIRouter, Depends, Query, HTTPException, Header
 from sqlalchemy.orm import Session
 from datetime import date
 from typing import List, Optional
@@ -17,12 +17,18 @@ def list_listings(
     page: int = 1, page_size: int = 20, sort: Optional[str] = None,
     db: Session = Depends(get_db)
 ):
+    if check_in and check_out:
+        if check_out <= check_in:
+            raise HTTPException(status_code=422, detail="check_out must be after check_in")
+        if check_in < date.today():
+            raise HTTPException(status_code=422, detail="check_in cannot be in the past")
+
     items, total = get_listings(db, location, check_in, check_out, guests, min_price, max_price, property_type, amenities, bedrooms, page, page_size, sort)
     return {"items": items, "total": total, "page": page, "page_size": page_size}
 
 @router.get("/{id}", response_model=ListingDetailSchema)
-def get_listing(id: int, db: Session = Depends(get_db)):
-    res = get_listing_detail(db, id)
+def get_listing(id: int, db: Session = Depends(get_db), x_user_id: Optional[int] = Header(None, alias="X-User-Id")):
+    res = get_listing_detail(db, id, user_id=x_user_id)
     if not res:
         raise HTTPException(status_code=404, detail="Listing not found")
     

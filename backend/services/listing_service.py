@@ -2,6 +2,17 @@ from sqlalchemy.orm import Session
 from sqlalchemy import func
 from datetime import date
 from models.models import Listing, Booking, Amenity, Review, Wishlist
+from utils import published_listings
+
+ALIAS_MAP = {
+    "bangalore": "bengaluru",
+    "bombay": "mumbai",
+    "madras": "chennai",
+    "calcutta": "kolkata",
+    "benares": "varanasi",
+    "pondicherry": "puducherry",
+    "goa": "goa"
+}
 
 def get_listings(
     db: Session, location: str = None, check_in: date = None, check_out: date = None,
@@ -9,10 +20,20 @@ def get_listings(
     property_type: str = None, amenities: str = None, bedrooms: int = None,
     page: int = 1, page_size: int = 20, sort: str = None
 ):
-    query = db.query(Listing)
+    query = published_listings(db.query(Listing))
     
     if location:
-        query = query.filter(Listing.city.ilike(f"%{location}%") | Listing.country.ilike(f"%{location}%"))
+        tokens = [t.strip().lower() for t in location.replace('  ', ' ').split(',')]
+        for token in tokens:
+            if not token:
+                continue
+            token = ALIAS_MAP.get(token, token)
+            query = query.filter(
+                Listing.city.ilike(f"%{token}%") |
+                Listing.state.ilike(f"%{token}%") |
+                Listing.country.ilike(f"%{token}%")
+            )
+
     if guests:
         query = query.filter(Listing.max_guests >= guests)
     if min_price is not None:
@@ -30,13 +51,19 @@ def get_listings(
             query = query.filter(Listing.amenities.any(Amenity.name.ilike(f"%{am}%")))
 
     if check_in and check_out:
-        # Overlap rule: exclude listings that have a confirmed booking overlapping these dates
-        overlapping_bookings = db.query(Booking.listing_id).filter(
+        from models.models import BlockedDate
+        subq_booking = db.query(Booking.id).filter(
+            Booking.listing_id == Listing.id,
             Booking.status == 'confirmed',
             Booking.check_in < check_out,
             Booking.check_out > check_in
-        )
-        query = query.filter(~Listing.id.in_(overlapping_bookings))
+        ).exists()
+        subq_blocked = db.query(BlockedDate.listing_id).filter(
+            BlockedDate.listing_id == Listing.id,
+            BlockedDate.date >= check_in,
+            BlockedDate.date < check_out
+        ).exists()
+        query = query.filter(~subq_booking, ~subq_blocked)
 
     if sort == "price_asc":
         query = query.order_by(Listing.price_per_night.asc())
@@ -48,11 +75,24 @@ def get_listings(
     total = query.count()
     items = query.offset((page - 1) * page_size).limit(page_size).all()
     
+    if check_in and check_out:
+        nights = (check_out - check_in).days
+        if nights > 0:
+            from services.pricing import calculate_price
+            for item in items:
+                price_info = calculate_price(db, item.id, check_in, check_out)
+                if price_info:
+                    item.nights = price_info["nights"]
+                    item.total_for_stay = price_info["total"]
+                
     return items, total
 
-def get_listing_detail(db: Session, listing_id: int):
+def get_listing_detail(db: Session, listing_id: int, user_id: int = None):
     listing = db.query(Listing).filter(Listing.id == listing_id).first()
     if not listing:
+        return None
+    
+    if listing.status != 'published' and listing.host_id != user_id:
         return None
         
     rating_stats = db.query(
@@ -67,11 +107,18 @@ def get_listing_detail(db: Session, listing_id: int):
     }
 
 def get_unavailable_dates(db: Session, listing_id: int, start_date: date, end_date: date):
+    from models.models import BlockedDate
     bookings = db.query(Booking).filter(
         Booking.listing_id == listing_id,
         Booking.status == 'confirmed',
         Booking.check_in <= end_date,
         Booking.check_out >= start_date
+    ).all()
+    
+    blocked = db.query(BlockedDate).filter(
+        BlockedDate.listing_id == listing_id,
+        BlockedDate.date >= start_date,
+        BlockedDate.date <= end_date
     ).all()
     
     unavailable = []
@@ -81,4 +128,8 @@ def get_unavailable_dates(db: Session, listing_id: int, start_date: date, end_da
         while curr < b.check_out:
             unavailable.append(curr.isoformat())
             curr += timedelta(days=1)
+            
+    for b in blocked:
+        unavailable.append(b.date.isoformat())
+        
     return list(set(unavailable))

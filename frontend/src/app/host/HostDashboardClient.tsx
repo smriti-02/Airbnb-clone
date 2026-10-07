@@ -5,6 +5,7 @@ import { Button, Modal, Skeleton } from "@/components/UI";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import { Plus, Edit2, Trash2 } from "lucide-react";
+import { formatINR, formatDateShort } from "@/lib/format";
 
 export default function HostDashboardClient() {
   const router = useRouter();
@@ -76,7 +77,7 @@ export default function HostDashboardClient() {
                 <div>
                   <div className="font-semibold text-lg line-clamp-1 mb-1 text-[color:var(--color-airbnb-text)]">{l.title}</div>
                   <div className="text-neutral-500 text-sm mb-4">{l.city}, {l.country}</div>
-                  <div className="font-bold text-[color:var(--color-airbnb-text)]">${l.price_per_night} <span className="font-normal text-sm">/ night</span></div>
+                  <div className="font-bold text-[color:var(--color-airbnb-text)]">{formatINR(l.price_per_night)} <span className="font-normal text-sm">/ night</span></div>
                 </div>
                 <div className="flex gap-2 mt-6">
                   <Button className="flex-1 flex justify-center items-center gap-2 border-neutral-300 hover:border-black" onClick={() => router.push(`/host/listings/${l.id}/edit`)}>
@@ -117,8 +118,8 @@ export default function HostDashboardClient() {
                         <span className="font-semibold text-[color:var(--color-airbnb-text)]">{r.guest?.name}</span>
                       </td>
                       <td className="p-4 font-medium text-[color:var(--color-airbnb-text)]">{r.listing?.title}</td>
-                      <td className="p-4 text-sm text-neutral-600">{new Date(r.check_in).toLocaleDateString()} - {new Date(r.check_out).toLocaleDateString()}</td>
-                      <td className="p-4 font-semibold text-[color:var(--color-airbnb-text)]">${r.total}</td>
+                      <td className="p-4 text-sm text-neutral-600">{formatDateShort(r.check_in)} - {formatDateShort(r.check_out)}</td>
+                      <td className="p-4 font-semibold text-[color:var(--color-airbnb-text)]">{formatINR(r.total)}</td>
                       <td className="p-4">
                         <span className={`px-2 py-1 rounded text-xs font-semibold ${r.status === 'confirmed' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
                           {r.status.toUpperCase()}
